@@ -5,12 +5,12 @@
 
 /**
  * The Hack CPU (Central Processing unit), consisting of an ALU,
- * two registers named A and D, and a program counter named PC.
+ * two REGisters named A and D, and a program counter named PC.
  * The CPU is designed to fetch and execute instructions written in 
  * the Hack machine language. In particular, functions as follows:
  * Executes the inputted instruction according to the Hack machine 
  * language specification. The D and A in the language specification
- * refer to CPU-resident registers, while M refers to the external
+ * refer to CPU-resident REGisters, while M refers to the external
  * memory location addressed by A, i.e. to Memory[A]. The inM input 
  * holds the value of this location. If the current instruction needs 
  * to write a value to M, the value is placed in outM, the address 
@@ -23,6 +23,47 @@
  * to their new values only in the next time step. If reset==1 then the 
  * CPU jumps to address 0 (i.e. pc is set to 0 in next time step) rather 
  * than to the address resulting from executing the current instruction. 
+ */
+/**
+ *****************
+ * INST resolver *
+ *****************
+ * INSTA == !instruction[15]
+ * INSTC == instruction[15]
+ *
+ * value= instruction[0..14]
+ * jump = instruction[0..2]
+ * dest = instruction[3..5]
+ * comp = instruction[6..12]
+ * abits = instruction[12]
+ * cbits = instruction[6..11]
+ *
+ **************
+ * alu_input: *
+ **************
+ * x = D
+ * y = (inM and instruction[12]) or (A and !instruction[12])
+ * zx = instruction[11]
+ * nx = instruction[10]
+ * zy = instruction[9]
+ * ny = instruction[8]
+ * f = instruction[7]
+ * no = instruction[6]
+ ***************
+ * alu_output: *
+ ***************
+ ********
+ * dest *
+ ********
+ * d1=instruction[5], Rega is in dist
+ * d2=instruction[4], Regd is in dist
+ * d3=instruction[3], m is in dist
+ ********
+ * jump *
+ ********
+ * j1=instruction[2], out<0
+ * j2=instruction[1], out=0
+ * j3=instruction[0], out>0
  */
 
 CHIP CPU {
@@ -39,5 +80,24 @@ CHIP CPU {
         pc[15];          // address of next instruction
 
     PARTS:
-    // Put your code here:
+    Not(in=instruction[15], out=insta);
+    Mux16(a=REGa, b=inM, sel=instruction[12], out=yinpin);
+    ALU(x=REGd, y=yinpin, zx=instruction[11], nx=instruction[10], zy=instruction[9], ny=instruction[8], f=instruction[7], no=instruction[6], out=aluout, zr=zrflag, ng=ngflag, out=outM);
+
+    And(a=instruction[3], b=instruction[15], out=writeM);
+    And(a=instruction[4], b=instruction[15], out=ddest);
+    Or(a=instruction[5], b=insta, out=adest);
+    Mux16(a=instruction, b=aluout, sel=instruction[15], out=REGainpin);
+    ARegister(in=REGainpin, load=adest, out=REGa, out[0..14]=addressM);
+    DRegister(in=aluout, load=ddest, out=REGd);
+    
+    Or(a=zrflag, b=ngflag, out=le);
+    Not(in=le, out=gt);
+    And(a=instruction[2], b=ngflag, out=jflag0);
+    And(a=instruction[1], b=zrflag, out=jflag1);
+    And(a=instruction[0], b=gt, out=jflag2);
+    Or(a=jflag0, b=jflag1, out=jflag3);
+    Or(a=jflag3, b=jflag2, out=jflag);
+    And(a=jflag, b=instruction[15], out=PCload);
+    PC(in=REGa, load=PCload, inc=true, reset=reset, out=pcout, out[0..14]=pc);
 }
