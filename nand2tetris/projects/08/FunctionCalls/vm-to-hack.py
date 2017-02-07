@@ -71,25 +71,6 @@ def strip_spacing_and_annot(cmd):
         cmd = cmd[:annotation]
     cmd = cmd.strip("\n").strip(" ")
     return cmd
-class Stack():
-    def __init__(self, size = 1024):
-        self._list = []
-        self._size = size
-        self._num = 0
-    def push(self, ele):
-        if self._num >= self._size:
-            raise ValueError("stack overflow!")
-        else:
-            self._list.append(ele)
-            self._num += 1
-    def pop(self):
-        if self._num > 0:
-            self._num -= 1
-            return self._list.pop()
-        else:
-            raise ValueError("pop from empty stack!")
-    def gettop(self):
-        return self._list[self._num - 1]
 class Parser():
     def __init__(self, input_script_path):
         self._input_script_path = input_script_path
