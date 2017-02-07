@@ -1,10 +1,5 @@
 import sys
 import re
-
-cur_path = sys.path[0]
-input_script_path = cur_path + '/' + sys.argv[1]
-output_script_name = sys.argv[1][:sys.argv[1].find('.asm')]
-output_script_path = cur_path + '/' + output_script_name + '.hack'
 re_symbol = re.compile(r'^[a-zA-z_.$:][a-zA-z0-9_.$:]*$')
 DEST_DICT = {'nil': '000', 'M': '001', 'D': '010', 'MD': '011',
              'A': '100', 'AM': '101', 'AD': '110', 'AMD': '111'}
@@ -24,10 +19,8 @@ symbol_table = {'SP': 0, 'LCL': 1, 'ARG': 2, 'THIS': 3,
                 'THAT': 4, 'SCREEN': 16384, 'KBD': '24576'}
 for i in range(16):
     symbol_table['R' + str(i)] = i
-
 free_mem_ptr = 16
 inst_addr = 0
-
 def issymbol(token):
     result = re.match(re_symbol, token)
     return result is not None
@@ -36,6 +29,7 @@ def isdecimal(token):
 class Parser():
     def __init__(self, input_script_path):
         self._input_script_path = input_script_path
+        self._input_script = None
         self._cur_command = None
         self._next_command = None
         self._cur_type = None
@@ -132,6 +126,10 @@ class Code():
         return JUMP_DICT[self.token]
 
 if __name__ == "__main__":
+    cur_path = sys.path[0]
+    input_script_path = cur_path + '/' + sys.argv[1]
+    output_script_name = sys.argv[1][:sys.argv[1].find('.asm')]
+    output_script_path = cur_path + '/' + output_script_name + '.hack'
     with Parser(input_script_path) as parser:
         result = []
         while parser.has_more_commands():

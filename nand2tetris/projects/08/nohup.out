@@ -1,0 +1,4 @@
+INFO: loading config from /home/lancecopper/conf/shadowsocks.json
+2017-02-07 10:17:57 INFO     loading libcrypto from libcrypto.so.1.0.0
+2017-02-07 10:17:57 INFO     starting local at 127.0.0.1:1080
+2017-02-07 10:17:57 ERROR    [Errno 98] Address already in use
