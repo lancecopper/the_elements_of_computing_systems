@@ -71,6 +71,33 @@ def strip_spacing_and_annot(cmd):
         cmd = cmd[:annotation]
     cmd = cmd.strip("\n").strip(" ")
     return cmd
+def strip_spacing(cmd):
+    cmd = cmd.strip("\n").strip(" ")
+    return cmd
+def read_line(io_text):
+    next_line = io_text.readline()
+    if next_line != "":
+        next_line = strip_spacing_and_annot(next_line)
+        while next_line.startswith("/*") or \
+              next_line == "":
+            if next_line.startswith("/*"):
+                while not next_line.endswith("*/"):
+                    next_line = io_text.readline()
+                    if next_line == "":
+                        raise ValueError("Incomplete annotation structure!")
+                    next_line = strip_spacing(next_line)
+                next_line = io_text.readline()
+                if next_line == "":
+                    break
+                else:
+                    next_line = strip_spacing_and_annot(next_line)
+            else:
+                next_line = io_text.readline()
+                if next_line == "":
+                    break
+                else:
+                    next_line = strip_spacing_and_annot(next_line)
+    return next_line
 class Parser():
     def __init__(self, input_script_path):
         self._input_script_path = input_script_path
@@ -87,15 +114,9 @@ class Parser():
     def has_more_commands(self):
         return self._next_command != ''
     def advance(self):
+        assert(self.has_more_commands())
         self._cur_command = self._next_command
-        self._next_command = self._input_script.readline()
-        if self._next_command != "":
-            self._next_command = strip_spacing_and_annot(self._next_command)
-            while self._next_command == "":
-                self._next_command = self._input_script.readline()
-                if self._next_command == "":
-                    break
-                self._next_command = strip_spacing_and_annot(self._next_command)
+        self._next_command = read_line(self._input_script)
         self._cur_type = None
         self._arg1 = None
         self._arg2 = None
@@ -129,7 +150,6 @@ class CodeWriter():
         self._label_num = 0
         self._ret_addr_num = 0
         self._cur_func = "mainentry"
-        #self._cur_func.push("main")
     def __enter__(self):
         self._output_script = open(self._output_script_path, "wt")
         return self

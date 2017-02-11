@@ -1,0 +1,19 @@
+class MyRand{
+    field int seed;
+    constructor MyRand new(int x){
+        let seed = x;
+        return this;
+    }
+    method int mod(int x, int y){
+        return x - (y * (x / y));
+    }
+    method int getRand(){
+        let seed = mod((seed * 31) + 13, 10);
+        return seed;
+    }
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+   }
+}
+

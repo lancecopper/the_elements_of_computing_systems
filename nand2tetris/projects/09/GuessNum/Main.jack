@@ -1,0 +1,50 @@
+class Main {
+    function void main() {
+        var MyRand r;
+        var int seed;
+        var int i, j, guess, score;
+        var boolean rightflag;
+
+        let seed = Keyboard.readInt("Input an integer as seed!: ");
+        let r = MyRand.new(seed);
+
+        let i = 0;
+        let score = 0;
+
+        while (i < 1) {
+            let rightflag = false;
+            let j = 0;
+            let seed = r.getRand();
+            do Output.printString("New round!");
+            do Output.println();
+            while ((j < 3) & (~rightflag)) {
+                let guess = Keyboard.readInt("Guess an integer 1~9!: ");
+                if (guess = seed) {
+                    let rightflag = true;
+                    do Output.printString("You guessed it!");
+                    do Output.println();
+                }
+                else {
+                    if (guess > seed) {
+                        do Output.printString("Too big!");
+                        do Output.println();
+                    }
+                    else {
+                        do Output.printString("Too small!");
+                        do Output.println();
+                    }
+                }
+                let j = j + 1;
+            }
+            if (rightflag) {
+                let score = score + 1;
+            }
+            let i = i + 1;
+        }
+        do r.dispose();
+        do Output.printString("Your score: ");
+        do Output.printInt(score);
+        do Output.println();
+        return;
+   }
+}
