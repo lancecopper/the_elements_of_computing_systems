@@ -1,0 +1,125 @@
+<class>
+  <keyword> class </keyword>
+  <identifier>
+    <inTable> False </inTable>
+    <condition> defined </condition>
+    <varName> Main </varName>
+    <kind> class </kind>
+  </identifier>
+  <symbol> { </symbol>
+  <subroutineDec>
+    <keyword> function </keyword>
+    <keyword> void </keyword>
+    <identifier>
+      <inTable> False </inTable>
+      <condition> defined </condition>
+      <varName> main </varName>
+      <kind> subroutine </kind>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <varDec>
+        <keyword> var </keyword>
+        <identifier>
+          <inTable> False </inTable>
+          <condition> defined </condition>
+          <varName> SquareGame </varName>
+          <kind> class </kind>
+        </identifier>
+        <identifier>
+          <inTable> True </inTable>
+          <condition> defined </condition>
+          <varName> game </varName>
+          <kind> var </kind>
+        </identifier>
+        <symbol> ; </symbol>
+      </varDec>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <inTable> True </inTable>
+            <condition> used </condition>
+            <varName> game </varName>
+            <kind> var </kind>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <inTable> False </inTable>
+                <condition> defined </condition>
+                <varName> SquareGame </varName>
+                <kind> class </kind>
+              </identifier>
+              <symbol> . </symbol>
+              <identifier>
+                <inTable> False </inTable>
+                <condition> defined </condition>
+                <varName> new </varName>
+                <kind> subroutine </kind>
+              </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+              </expressionList>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <inTable> True </inTable>
+            <condition> used </condition>
+            <varName> game </varName>
+            <kind> var </kind>
+          </identifier>
+          <symbol> . </symbol>
+          <identifier>
+            <inTable> False </inTable>
+            <condition> defined </condition>
+            <varName> run </varName>
+            <kind> subroutine </kind>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <inTable> True </inTable>
+            <condition> used </condition>
+            <varName> game </varName>
+            <kind> var </kind>
+          </identifier>
+          <symbol> . </symbol>
+          <identifier>
+            <inTable> False </inTable>
+            <condition> defined </condition>
+            <varName> dispose </varName>
+            <kind> subroutine </kind>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <symbol> } </symbol>
+</class>

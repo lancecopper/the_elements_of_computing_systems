@@ -1,0 +1,1391 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<channel>
+	<title>Planet Python</title>
+	<link>http://planetpython.org/</link>
+	<language>en</language>
+	<description>Planet Python - http://planetpython.org/</description>
+
+<item>
+	<title>Erik Marsja: Python Video Tutorial: Creating a Flanker Task using Expyriment</title>
+	<guid>http://www.marsja.se/expyriment-python-video-tutorial/</guid>
+	<link>http://www.marsja.se/expyriment-python-video-tutorial/</link>
+	<description>&lt;p&gt;In this video you learn how to create a &lt;a href=&quot;https://en.wikipedia.org/wiki/Eriksen_flanker_task&quot; target=&quot;_blank&quot;&gt;Flanker task &lt;/a&gt;using the Python package &lt;a href=&quot;http://www.expyriment.org/&quot; target=&quot;_blank&quot;&gt;Expyriment&lt;/a&gt;. If you don&amp;#8217;t know Expyriment it is an open-source library. You can program your experiments and run on Linux, Windows, and OS-x computers as well as on Android devices.&lt;/p&gt;
+&lt;p&gt;In the tutorial you will get familiar with Expyriment and get to create a commonly used task in Psychology &amp;#8211; the Flanker task. In this task, you are to respond on the direction of an arrow surrounded by distractors (arrows pointing in either the same or the other direction). It shows how hard it can be to ignore irrelevant information (arrows pointing in the wrong direction).&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The post &lt;a rel=&quot;nofollow&quot; href=&quot;http://www.marsja.se/expyriment-python-video-tutorial/&quot;&gt;Python Video Tutorial: Creating a Flanker Task using Expyriment&lt;/a&gt; appeared first on &lt;a rel=&quot;nofollow&quot; href=&quot;http://www.marsja.se&quot;&gt;Erik Marsja&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Sun, 12 Feb 2017 12:12:30 +0000</pubDate>
+</item>
+<item>
+	<title>Jaime Buelta: $7.11 in four prices and the Decimal type, revisited</title>
+	<guid>https://wrongsideofmemphis.wordpress.com/2017/02/11/7-11-in-four-prices-and-the-decimal-type-revisited/</guid>
+	<link>https://wrongsideofmemphis.wordpress.com/2017/02/11/7-11-in-four-prices-and-the-decimal-type-revisited/</link>
+	<description>I happen to take a look to this old post in this blog. The post is&amp;#160;7 years old, but still presents an interesting problem. &amp;#8220;A mathematician purchased four items in a grocery store. He noticed that when he added the prices of the four items, the sum came to $7.11, and when he multiplied the &amp;#8230; &lt;a href=&quot;https://wrongsideofmemphis.wordpress.com/2017/02/11/7-11-in-four-prices-and-the-decimal-type-revisited/&quot; class=&quot;more-link&quot;&gt;Continue reading &lt;span class=&quot;screen-reader-text&quot;&gt;$7.11 in four prices and the Decimal type,&amp;#160;revisited&lt;/span&gt;&lt;/a&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;https://pixel.wp.com/b.gif?host=wrongsideofmemphis.wordpress.com&amp;blog=6419543&amp;post=1623&amp;subd=wrongsideofmemphis&amp;ref=&amp;feed=1&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;</description>
+	<pubDate>Sat, 11 Feb 2017 14:00:25 +0000</pubDate>
+</item>
+<item>
+	<title>Kushal Das: Running OpenShift using Minishift</title>
+	<guid>https://kushaldas.in/posts/running-openshift-using-minishift.html</guid>
+	<link>https://kushaldas.in/posts/running-openshift-using-minishift.html</link>
+	<description>&lt;!--
+.. title: Running OpenShift using Minishift
+.. slug: running-openshift-using-minishift
+.. date: 2017-02-11T12:16:40+05:30
+.. tags: Fedora, Python, OpenShift
+.. link:
+.. description:
+.. type: text
+--&gt;
+
+&lt;p&gt;You may already hear about Kubernetes or you may be using it right now.
+OpenShift Origin is a distribution of Kubernetes, which is optimized for
+continuous development and multi-tenant deployment. It also powers the &lt;a href=&quot;https://www.openshift.com/&quot;&gt;Red Hat
+OpenShift&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/minishift/minishift&quot;&gt;Minishift&lt;/a&gt; is the upcoming tool which will enable you to run OpenShift locally
+on your computer on a single node OpenShift cluster inside a VM.  I am using it
+on a Fedora 25 laptop, with help of KVM. It can also be used on Windows or OSX.
+For KVM, I first had to install
+&lt;a href=&quot;https://github.com/minishift/minishift/blob/master/docs/docker-machine-drivers.md#kvm-driver&quot;&gt;docker-machine-driver-kvm&lt;/a&gt;.
+Then downloaded the latest minishift from the &lt;a href=&quot;https://github.com/minishift/minishift/releases&quot;&gt;releases
+page&lt;/a&gt;. Unzip, and put the
+binary in your path.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ./minishift start
+Starting local OpenShift cluster using 'kvm' hypervisor...
+E0209 20:42:29.927281    4638 start.go:135] Error starting the VM: Error creating the VM. Error creating machine: Error checking the host: Error checking and/or regenerating the certs: There was an error validating certificates for host &amp;quot;192.168.42.243:2376&amp;quot;: tls: DialWithDialer timed out
+You can attempt to regenerate them using 'docker-machine regenerate-certs [name]'.
+Be advised that this will trigger a Docker daemon restart which might stop running containers.
+. Retrying.
+Provisioning OpenShift via '/home/kdas/.minishift/cache/oc/v1.4.1/oc [cluster up --use-existing-config --host-config-dir /var/lib/minishift/openshift.local.config --host-data-dir /var/lib/minishift/hostdata]'
+-- Checking OpenShift client ... OK
+-- Checking Docker client ... OK
+-- Checking Docker version ... OK
+-- Checking for existing OpenShift container ... OK
+-- Checking for openshift/origin:v1.4.1 image ... 
+   Pulling image openshift/origin:v1.4.1
+   Pulled 0/3 layers, 3% complete
+   Pulled 0/3 layers, 24% complete
+   Pulled 0/3 layers, 45% complete
+   Pulled 1/3 layers, 63% complete
+   Pulled 2/3 layers, 81% complete
+   Pulled 2/3 layers, 92% complete
+   Pulled 3/3 layers, 100% complete
+   Extracting
+   Image pull complete
+-- Checking Docker daemon configuration ... OK
+-- Checking for available ports ... OK
+-- Checking type of volume mount ... 
+   Using Docker shared volumes for OpenShift volumes
+-- Creating host directories ... OK
+-- Finding server IP ... 
+   Using 192.168.42.243 as the server IP
+-- Starting OpenShift container ... 
+   Creating initial OpenShift configuration
+   Starting OpenShift using container 'origin'
+   Waiting for API server to start listening
+   OpenShift server started
+-- Adding default OAuthClient redirect URIs ... OK
+-- Installing registry ... OK
+-- Installing router ... OK
+-- Importing image streams ... OK
+-- Importing templates ... OK
+-- Login to server ... OK
+-- Creating initial project &amp;quot;myproject&amp;quot; ... OK
+-- Removing temporary directory ... OK
+-- Server Information ... 
+   OpenShift server started.
+   The server is accessible via web console at:
+       https://192.168.42.243:8443
+
+   You are logged in as:
+       User:     developer
+       Password: developer
+
+   To login as administrator:
+       oc login -u system:admin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The oc binary is in &lt;em&gt;~/.minishift/cache/oc/v1.4.1/&lt;/em&gt; directory, so you can add
+that in your PATH. If you open up the above-mentioned URL in your browser, you
+will find your OpenShift cluster is up and running well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://kushaldas.in/images/minishift1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://kushaldas.in/images/minishift4.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://kushaldas.in/images/minishift3.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://kushaldas.in/images/minishift2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you can start reading the &lt;a href=&quot;https://github.com/minishift/minishift/blob/master/docs/using.md&quot;&gt;Using
+Minishift&lt;/a&gt; to
+start using your brand new OpenShift Cluster.&lt;/p&gt;</description>
+	<pubDate>Sat, 11 Feb 2017 06:46:00 +0000</pubDate>
+</item>
+<item>
+	<title>Vasudev Ram: tp, a simple text pager in Python</title>
+	<guid>http://jugad2.blogspot.com/2017/02/tp-simple-text-pager-in-python.html</guid>
+	<link>http://jugad2.blogspot.com/2017/02/tp-simple-text-pager-in-python.html</link>
+	<description>By &lt;a href=&quot;https://jugad2.blogspot.in/p/about-vasudev-ram.html&quot;&gt;Vasudev Ram&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Yesterday I got this idea of writing a simple &lt;b&gt;text file pager&lt;/b&gt; in Python.&lt;br /&gt;&lt;br /&gt;Here it is, in file tp.py:&lt;br /&gt;&lt;pre&gt;'''&lt;br /&gt;tp.py&lt;br /&gt;Purpose: A simple text pager.&lt;br /&gt;Version: 0.1&lt;br /&gt;Platform: Windows-only.&lt;br /&gt;Can be adapted for Unix using tty / termios calls.&lt;br /&gt;Only the use of msvcrt.getch() needs to be changed.&lt;br /&gt;Author: Vasudev Ram&lt;br /&gt;Copyright 2017 Vasudev Ram&lt;br /&gt;Web site: https://vasudevram.github.io&lt;br /&gt;Blog: https://jugad2.blogspot.com&lt;br /&gt;Product store: https://gumroad.com/vasudevram&lt;br /&gt;'''&lt;br /&gt;&lt;br /&gt;import sys&lt;br /&gt;import string&lt;br /&gt;from msvcrt import getch&lt;br /&gt;&lt;br /&gt;def pager(in_fil=sys.stdin, lines_per_page=10, quit_key='q'):&lt;br /&gt;    assert lines_per_page &amp;gt; 1 and lines_per_page == int(lines_per_page)&lt;br /&gt;    assert len(quit_key) == 1 and \&lt;br /&gt;        quit_key in (string.ascii_letters + string.digits)&lt;br /&gt;    lin_ctr = 0&lt;br /&gt;    for lin in in_fil:&lt;br /&gt;        sys.stdout.write(lin)&lt;br /&gt;        lin_ctr += 1&lt;br /&gt;        if lin_ctr &amp;gt;= lines_per_page:&lt;br /&gt;            c = getch().lower()&lt;br /&gt;            if c == quit_key.lower():&lt;br /&gt;                break&lt;br /&gt;            else:&lt;br /&gt;                lin_ctr = 0&lt;br /&gt;&lt;br /&gt;def main():&lt;br /&gt;    try:&lt;br /&gt;        sa, lsa = sys.argv, len(sys.argv)&lt;br /&gt;        if lsa == 1:&lt;br /&gt;            pager()&lt;br /&gt;        elif lsa == 2:&lt;br /&gt;            with open(sa[1], &quot;r&quot;) as in_fil:&lt;br /&gt;                pager(in_fil)&lt;br /&gt;        else:&lt;br /&gt;            sys.stderr.write&lt;br /&gt;            (&quot;Only one input file allowed in this version&quot;)&lt;br /&gt;                    &lt;br /&gt;    except IOError as ioe:&lt;br /&gt;        sys.stderr.write(&quot;Caught IOError: {}&quot;.format(repr(ioe)))&lt;br /&gt;        sys.exit(1)&lt;br /&gt;&lt;br /&gt;    except Exception as e:&lt;br /&gt;        sys.stderr.write(&quot;Caught Exception: {}&quot;.format(repr(e)))&lt;br /&gt;        sys.exit(1)&lt;br /&gt;&lt;br /&gt;if __name__ == '__main__':&lt;br /&gt;    main()&lt;br /&gt;&lt;/pre&gt;I added a couple of &lt;a href=&quot;https://docs.python.org/2/reference/simple_stmts.html#grammar-token-assert_stmt&quot;&gt;assertions&lt;/a&gt; for sanity checking.&lt;br /&gt;&lt;br /&gt;The logic of the program is fairly straightforward:&lt;br /&gt;&lt;br /&gt;- open (for reading) the filename given as command line argument, or just read (the already-open) sys.stdin&lt;br /&gt;- loop over the lines of the file, lines-per-page lines at a time&lt;br /&gt;- read a character from the keyboard (without waiting for Enter, hence the use of msvcrt.getch [1])&lt;br /&gt;- if it is the quit key, quit, else reset line counter and print another batch of lines&lt;br /&gt;- do error handling as needed&lt;br /&gt;&lt;br /&gt;[1] The &lt;a href=&quot;https://docs.python.org/2/library/msvcrt.html&quot;&gt;msvcrt module&lt;/a&gt; is on Windows only, but there are ways to get equivalent functionality on Unixen; google for phrases like &quot;reading a keypress on Unix without waiting for Enter&quot;, and look up Unix terms like tty, termios, curses, cbreak, etc.&lt;br /&gt;&lt;br /&gt;And here are two runs of the program that &lt;a href=&quot;https://en.wikipedia.org/wiki/Eating_your_own_dog_food&quot;&gt;dogfood&lt;/a&gt; it, one directly with a file (the program itself) as a command-line argument, and the other with the program at the end of a pipeline; output is not shown since it is the same as the input file, in both cases; you just have to press some key (other than q (which makes it quit), repeatedly, to page through the content):&lt;br /&gt;&lt;pre&gt;$ python tp.py tp.py&lt;br /&gt;&lt;/pre&gt;&lt;pre&gt;$type tp.py | python tp.py&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;I could have &lt;a href=&quot;https://en.wikipedia.org/wiki/Code_golf&quot;&gt;golfed the code&lt;/a&gt; a bit, but chose not to, in the interest of &lt;a href=&quot;https://www.python.org/dev/peps/pep-0020/&quot;&gt;the Zen of Python&lt;/a&gt;. Heck, Python is already Zen enough.&lt;br /&gt;&lt;br /&gt;- &lt;a href=&quot;https://vasudevram.github.io/&quot;&gt;Vasudev Ram - Online Python training and consulting&lt;/a&gt; &lt;p&gt;&lt;/p&gt;&lt;a href=&quot;https://gumroad.com/vasudevram/follow/&quot;&gt;Get updates (via Gumroad)&lt;/a&gt; on my forthcoming apps and content. &lt;p&gt;&lt;/p&gt;Jump to posts: &lt;a href=&quot;http://jugad2.blogspot.com/search/label/python&quot;&gt;Python&lt;/a&gt; * &lt;a href=&quot;http://jugad2.blogspot.com/search/label/DLang&quot;&gt;DLang&lt;/a&gt; * &lt;a href=&quot;http://jugad2.blogspot.com/search/label/xtopdf&quot;&gt;xtopdf&lt;/a&gt; &lt;p&gt;&lt;/p&gt;&lt;a href=&quot;https://feedburner.google.com/fb/a/mailverify?uri=Jugad2-VasudevRamOnSoftwareInnovation&amp;loc=en_US&quot;&gt;Subscribe to my blog by email&lt;/a&gt; &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;a href=&quot;https://code.activestate.com/recipes/users/4173351/&quot;&gt;My ActiveState Code recipes&lt;/a&gt;&lt;p&gt;&lt;/p&gt;Follow me on: &lt;a href=&quot;https://www.linkedin.com/in/vasudevram?trk=nav_responsive_tab_profile&quot;&gt;LinkedIn&lt;/a&gt; * &lt;a href=&quot;https://mobile.twitter.com/vasudevram&quot;&gt;Twitter&lt;/a&gt; &lt;p&gt;&lt;/p&gt;&lt;a href=&quot;http://share.getf.ly/p35s5a&quot;&gt;Managed WordPress Hosting by FlyWheel&lt;/a&gt;&lt;p&gt;&lt;/p&gt;&lt;!-- AddThis Button BEGIN --&gt; &lt;div class=&quot;addthis_toolbox addthis_default_style&quot;&gt;&lt;a href=&quot;http://www.addthis.com/bookmark.php?v=250&amp;username=vasudevram&quot; class=&quot;addthis_button_compact&quot;&gt;Share&lt;/a&gt; &lt;span class=&quot;addthis_separator&quot;&gt;|&lt;/span&gt; &lt;a class=&quot;addthis_button_preferred_1&quot;&gt;&lt;/a&gt; &lt;a class=&quot;addthis_button_preferred_2&quot;&gt;&lt;/a&gt; &lt;a class=&quot;addthis_button_preferred_3&quot;&gt;&lt;/a&gt; &lt;a class=&quot;addthis_button_preferred_4&quot;&gt;&lt;/a&gt; &lt;/div&gt; &lt;p&gt;&lt;/p&gt; &lt;!-- AddThis Button END --&gt;&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;a href=&quot;http://vasudevram.github.io&quot;&gt;Vasudev Ram&lt;/a&gt;
+&lt;br /&gt;&lt;/div&gt;</description>
+	<pubDate>Sat, 11 Feb 2017 02:55:54 +0000</pubDate>
+</item>
+<item>
+	<title>Philip Semanchuk: How Best to Coerce Python Objects to Integers?</title>
+	<guid>http://blog.pyspoken.com/2017/01/02/how-best-to-coerce-python-objects-to-integers/</guid>
+	<link>http://blog.pyspoken.com/2017/01/02/how-best-to-coerce-python-objects-to-integers/</link>
+	<description>&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In my opinion, the best way in Python to safely coerce things to integers requires use of an (almost) &amp;#8220;naked&amp;#8221; except, which is a construct I rarely want to use. Read on to see how I arrived at this conclusion, or you can &lt;a href=&quot;http://blog.pyspoken.com/2017/01/02/how-best-to-coerce-python-objects-to-integers/#final&quot;&gt;jump ahead to what I think is the best solution&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;Suppose you had to write a Python function to convert to integer string values representing temperatures, like this list —&lt;/p&gt;
+&lt;pre&gt;['22', '24', '24', '24', '23', '27']&lt;/pre&gt;
+&lt;p&gt;The strings come from a file that a human has typed in, so even though most of the values are good, a few will have errors (&lt;code&gt;'25C'&lt;/code&gt;) that &lt;code&gt;int()&lt;/code&gt; will reject.&lt;/p&gt;
+&lt;h2&gt;Let&amp;#8217;s Explore Some Solutions&lt;/h2&gt;
+&lt;p&gt;You might write a function like this —&lt;/p&gt;
+&lt;pre&gt;def force_to_int(value):
+    &quot;&quot;&quot;Given a value, returns the value as an int if possible.
+    Otherwise returns None.
+    &quot;&quot;&quot;
+    try:
+        return int(value)
+    except ValueError:
+        return None&lt;/pre&gt;
+&lt;p&gt;Here&amp;#8217;s that function in action at the Python prompt —&lt;/p&gt;
+&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; print(force_to_int('42'))
+42
+&amp;gt;&amp;gt;&amp;gt; print(force_to_int('oops'))
+None&lt;/pre&gt;
+&lt;p&gt;That works! However, it&amp;#8217;s not as robust as it could be.&lt;/p&gt;
+&lt;p&gt;Suppose this function gets input that&amp;#8217;s even more unexpected, like &lt;code&gt;None&lt;/code&gt; —&lt;/p&gt;
+&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; print(force_to_int(None))
+Traceback (most recent call last):
+  File &quot;&amp;lt;stdin&amp;gt;&quot;, line 1, in &amp;lt;module&amp;gt;
+  File &quot;&amp;lt;stdin&amp;gt;&quot;, line 6, in force_to_int
+TypeError: int() argument must be a string or a number, not 'NoneType'&lt;/pre&gt;
+&lt;p&gt;Hmmm, let&amp;#8217;s write a better version that catches &lt;code&gt;TypeError&lt;/code&gt; in addition to &lt;code&gt;ValueError&lt;/code&gt; &amp;#8212;&lt;/p&gt;
+&lt;pre&gt;def force_to_int(value):
+    &quot;&quot;&quot;Given a value, returns the value as an int if possible.
+    Otherwise returns None.
+    &quot;&quot;&quot;
+    try:
+        return int(value)
+    except (ValueError, TypeError):
+        return None&lt;/pre&gt;
+&lt;p&gt;Let&amp;#8217;s give that a try at the Python prompt —&lt;/p&gt;
+&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; print(force_to_int(None))
+None&lt;/pre&gt;
+&lt;p&gt;Aha! Now we&amp;#8217;re getting somewhere. Let&amp;#8217;s try some other types —&lt;/p&gt;
+&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; import datetime
+&amp;gt;&amp;gt;&amp;gt; print(force_to_int(datetime.datetime.now()))
+None
+&amp;gt;&amp;gt;&amp;gt; print(force_to_int({}))
+None
+&amp;gt;&amp;gt;&amp;gt; print(force_to_int(complex(3,3)))
+None
+&amp;gt;&amp;gt;&amp;gt; print(force_to_int(ValueError))
+None&lt;/pre&gt;
+&lt;p&gt;OK, looks good! Time to pop open a cold one and&amp;#8230;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;size-medium wp-image-149 aligncenter&quot; src=&quot;http://blog.pyspoken.com/wp-content/uploads/2016/12/beer_drinkers-300x207.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;207&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Wait, I can still feed input to this function that will break it. Watch this —&lt;/p&gt;
+&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; class Unintable():
+ ...    def __int__(self):
+ ...        raise ArithmeticError
+ ...
+ &amp;gt;&amp;gt;&amp;gt;
+ &amp;gt;&amp;gt;&amp;gt; trouble = Unintable()
+ &amp;gt;&amp;gt;&amp;gt; print(force_to_int(trouble))
+ Traceback (most recent call last):
+   File &quot;&amp;lt;stdin&amp;gt;&quot;, line 1, in &amp;lt;module&amp;gt;
+   File &quot;&amp;lt;stdin&amp;gt;&quot;, line 6, in force_to_int
+   File &quot;&amp;lt;stdin&amp;gt;&quot;, line 3, in __int__
+ ArithmeticError&lt;/pre&gt;
+&lt;p&gt;Dang!&lt;/p&gt;
+&lt;p&gt;While the class &lt;code&gt;Unintable&lt;/code&gt; is contrived, it reminds us that classes control their own conversion to &lt;code&gt;int&lt;/code&gt;, and can raise any error they please, even a custom error. A scenario that&amp;#8217;s more realistic than the &lt;code&gt;Unintable&lt;/code&gt; class might be a class that wraps an industrial sensor. Calling &lt;code&gt;int()&lt;/code&gt; on an instance normally returns a value representing pressure or temperature. However, it might reasonably raise a &lt;code&gt;SensorNotReadyError&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;And Finally, the Naked Except&lt;/h2&gt;
+&lt;p&gt;Since any exception is possible when calling &lt;code&gt;int()&lt;/code&gt;, our code has to accomodate that. That requires the ugly &amp;#8220;naked&amp;#8221; &lt;code&gt;except&lt;/code&gt;. A &amp;#8220;naked&amp;#8221; &lt;code&gt;except&lt;/code&gt; is an &lt;code&gt;except&lt;/code&gt; statement that doesn&amp;#8217;t specify which exceptions it catches, so it catches all of them, even &lt;code&gt;SyntaxError&lt;/code&gt;. They give bugs a place to hide, and I don&amp;#8217;t like them. Here, I think it&amp;#8217;s the only choice —&lt;/p&gt;
+&lt;pre&gt;def force_to_int(value):
+    &quot;&quot;&quot;Given a value, returns the value as an int if possible.
+    Otherwise returns None.
+    &quot;&quot;&quot;
+    try:
+        return int(value)
+    except:
+        return None&lt;/pre&gt;
+&lt;p&gt;At the Python prompt —&lt;/p&gt;
+&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; print(int_or_else(trouble))
+ None&lt;/pre&gt;
+&lt;p&gt;Now the bones of the function are complete.&lt;/p&gt;
+&lt;h2&gt;Complete, Except For One Exception&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.dscpl.com.au&quot;&gt;Graham Dumpleton&lt;/a&gt;&amp;#8216;s comment below pointed out that there&amp;#8217;s a difference between what I call a &amp;#8216;naked&amp;#8217; except —&lt;/p&gt;
+&lt;pre&gt;except:&lt;/pre&gt;
+&lt;p&gt;And this —&lt;/p&gt;
+&lt;pre&gt;except Exception:&lt;/pre&gt;
+&lt;p&gt;The former traps even &lt;code&gt;SystemExit&lt;/code&gt; which you don&amp;#8217;t want to trap without good reason. From &lt;a href=&quot;https://docs.python.org/3/library/exceptions.html#SystemExit&quot;&gt;the Python documentation for &lt;code&gt;SystemExit&lt;/code&gt;&lt;/a&gt; —&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;It inherits from &lt;code&gt;BaseException&lt;/code&gt; instead of &lt;code&gt;Exception&lt;/code&gt; so that it is not accidentally caught by code that catches &lt;code&gt;Exception&lt;/code&gt;. This allows the exception to properly propagate up and cause the interpreter to exit.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The difference between these two is only a side note here, but I wanted to point it out because (a) it was educational for me and (b) it explains why I&amp;#8217;ve updated this post to hedge on what I was originally calling a &amp;#8216;naked&amp;#8217; except.&lt;/p&gt;
+&lt;h2 id=&quot;final&quot;&gt;The Final Version&lt;/h2&gt;
+&lt;p&gt;We can make this a bit nicer by allowing the caller to control the non-int return value, giving the &amp;#8220;naked&amp;#8221; except a fig leaf, and changing the function name —&lt;/p&gt;
+&lt;pre&gt;def int_or_else(value, else_value=None):
+    &quot;&quot;&quot;Given a value, returns the value as an int if possible. 
+    If not, returns else_value which defaults to None.
+    &quot;&quot;&quot;
+    try:
+        return int(value)
+    # I don't like catch-all excepts, but since objects can raise arbitrary
+    # exceptions when executing __int__(), then any exception is
+    # possible here, even if only TypeError and ValueError are 
+    # really likely.
+    except Exception:
+        return else_value&lt;/pre&gt;
+&lt;p&gt;At the Python prompt —&lt;/p&gt;
+&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; print(int_or_else(trouble))
+None
+&amp;gt;&amp;gt;&amp;gt; print(int_or_else(trouble, 'spaghetti'))
+spaghetti&lt;/pre&gt;
+&lt;p&gt;So there you have it. I&amp;#8217;m happy with this function. It feels bulletproof. It contains an (almost) naked except, but that only covers one simple line of code that&amp;#8217;s unlikely to hide anything nasty.&lt;/p&gt;
+&lt;p&gt;You might also want to read &lt;a href=&quot;http://blog.pyspoken.com/2017/02/10/coercing-objects-to-integer-revisited/&quot;&gt;a post I made about the exception handling choices in this post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I release this code into the public domain, and I&amp;#8217;ll even throw in the valuable Unintable class for free!&lt;/p&gt;
+&lt;p&gt;The image in this post is public domain and comes to us courtesy of Wikimedia Commons.&lt;/p&gt;</description>
+	<pubDate>Sat, 11 Feb 2017 02:25:42 +0000</pubDate>
+</item>
+<item>
+	<title>Philip Semanchuk: Coercing Objects to Integer, Revisited</title>
+	<guid>http://blog.pyspoken.com/2017/02/10/coercing-objects-to-integer-revisited/</guid>
+	<link>http://blog.pyspoken.com/2017/02/10/coercing-objects-to-integer-revisited/</link>
+	<description>&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;I recently wrote &lt;a href=&quot;http://blog.pyspoken.com/2017/01/02/how-best-to-coerce-python-objects-to-integers/&quot;&gt;a blog post that involved exception handling&lt;/a&gt;, and gave short shrift to the part of exception handling I didn&amp;#8217;t want to talk about in order to focus on the part I &lt;em&gt;did&lt;/em&gt; want to talk about. For some readers, that clearly backfired.&lt;/p&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;My recent &lt;a href=&quot;http://blog.pyspoken.com/2017/01/02/how-best-to-coerce-python-objects-to-integers/&quot;&gt;blog post about coercing Python objects to integers&lt;/a&gt; caught people&amp;#8217;s attention in a way I hadn&amp;#8217;t intended. &lt;strong&gt;The point I was trying to make was&lt;/strong&gt; that an innocent-looking call like &lt;code&gt;int(an_object)&lt;/code&gt; calls the method &lt;code&gt;an_object&lt;span&gt;.&lt;/span&gt;&lt;/code&gt;&lt;code&gt;__int__()&lt;/code&gt;, and since that can be arbitrary code, it can raise arbitrary exceptions. Therefore, &lt;strong&gt;it&amp;#8217;s insufficient to catch only the usual exceptions of ValueError and TypeError if you don&amp;#8217;t know the type of &lt;code&gt;an_object&lt;/code&gt; in advance&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s the code I suggested –&lt;/p&gt;
+&lt;pre&gt;def int_or_else(value, else_value=None):
+    &quot;&quot;&quot;Given a value, returns the value as an int if possible.
+    If not, returns else_value which defaults to None.
+    &quot;&quot;&quot;
+    try:
+        return int(value)
+    # I don't like catch-all excepts, but since objects can raise arbitrary
+    # exceptions when executing __int__(), then any exception is
+    # possible here, even if only TypeError and ValueError are
+    # really likely.
+    except Exception:
+        return else_value&lt;/pre&gt;
+&lt;p&gt;Several commenters objected to the fact that this code discards (and therefore silences/masks/hides) all exceptions. Here&amp;#8217;s why I made that choice.&lt;/p&gt;
+&lt;h2&gt;The Two Parts of Exception Handling&lt;/h2&gt;
+&lt;p&gt;In Python, there&amp;#8217;s two parts to consider about exception handling &amp;#8212; &lt;strong&gt;what to catch, and what to do with the exception once you&amp;#8217;ve caught it. My intention was to write only about the former.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The latter is an interesting topic, too.&lt;/strong&gt; Once you&amp;#8217;ve caught an exception, you might want to log it and then discard it, log it and then re-raise it, re-raise it as a different exception, silence it, let it pass up to the caller, modify its attributes and re-raise it, etc. &lt;strong&gt;There&amp;#8217;s enough material for an entire blog post about different ways to react to an exception, and the pros and cons of each.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Someday I might write that post about different ways to react to trapped exceptions, and if I do, I&amp;#8217;ll dedicate the entire post to the subject to give it the attention it deserves. That other blog post – that was not it. In fact, it was the opposite. I gave the topic of processing the trapped exception as little attention as possible so as not to detract attention from what I wanted to be the main topic (what exceptions need to be trapped).&lt;/p&gt;
+&lt;p&gt;That backfired.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;My post was not advocacy of discarding exceptions, nor was it advocacy of &lt;em&gt;not&lt;/em&gt; discarding exceptions. What&amp;#8217;s the right choice? It depends. One situation where you might want to discard exceptions is in a blog post where you&amp;#8217;re trying to keep the code as brief as possible for readability. Then again, you might regret that.&lt;code&gt; :-)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In the future, I&amp;#8217;ll be clearer about what shortcuts I&amp;#8217;m taking for brevity of presentation.&lt;/p&gt;
+&lt;p&gt;Agree? Disagree? I&amp;#8217;d like to hear from you. I like it when people agree with me. Those who disagree can expand my horizons, and I like that too. In short, &lt;strong&gt;all civil comments are welcome&lt;/strong&gt;. I feel I&amp;#8217;ve spent enough time thinking about this topic for now, but that doesn&amp;#8217;t make me right! Let me know what &lt;em&gt;you&lt;/em&gt; think.&lt;/p&gt;</description>
+	<pubDate>Sat, 11 Feb 2017 02:15:36 +0000</pubDate>
+</item>
+<item>
+	<title>Twisted Matrix Labs: Twisted 17.1.0 Released</title>
+	<guid>http://feedproxy.google.com/~r/TwistedMatrixLaboratories/~3/I-dN05prNnU/twisted-1710-released.html</guid>
+	<link>http://feedproxy.google.com/~r/TwistedMatrixLaboratories/~3/I-dN05prNnU/twisted-1710-released.html</link>
+	<description>On behalf of Twisted Matrix Laboratories, I am honoured to announce the release of Twisted 17.1!&lt;br /&gt;&lt;br /&gt;The highlights of this release are:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;twisted.web.client.Agent&lt;/span&gt; now supports IPv6! It's also now the primary web client in Twisted, with &lt;span&gt;twisted.web.client.getPage&lt;/span&gt; being deprecated in favour of it and Treq.&lt;/li&gt;&lt;li&gt;&lt;span&gt;twisted.web.server&lt;/span&gt; has had many cleanups revolving around timing out inactive clients.&lt;/li&gt;&lt;li&gt;&lt;span&gt;twisted.internet.ssl.CertificateOptions&lt;/span&gt; has had its &lt;span&gt;method&lt;/span&gt; argument deprecated, in favour of the new &lt;span&gt;raiseMinimumTo&lt;/span&gt;, &lt;span&gt;lowerMaximumSecurityTo&lt;/span&gt;, and &lt;span&gt;insecurelyLowerMinimumTo&lt;/span&gt; arguments, which take &lt;span&gt;TLSVersion&lt;/span&gt; arguments. This allows you to better give a range of versions of TLS you wish to negotiate, rather than forcing yourself to any one version.&lt;/li&gt;&lt;li&gt;&lt;span&gt;twisted.internet.ssl.CertificateOptions&lt;/span&gt; will use OpenSSL's &lt;span&gt;MODE_RELEASE_BUFFERS&lt;/span&gt;, which will let it free unused memory that was held by idle TLS connections.&lt;/li&gt;&lt;li&gt;You can now call the new twist runner with &lt;span&gt;python -m twisted&lt;/span&gt;.&lt;/li&gt;&lt;li&gt;&lt;span&gt;twisted.conch.ssh&lt;/span&gt; now has some ECDH key exchange support and supports &lt;span&gt;hmac-sha2-384&lt;/span&gt;.&lt;/li&gt;&lt;li&gt;Better Unicode support in &lt;span&gt;twisted.internet.reactor.spawnProcess&lt;/span&gt;, especially on Windows on Python 3.6.&lt;/li&gt;&lt;li&gt;More Python 3 porting in Conch, and more under-the-hood changes to facilitate a Twisted-wide jump to new-style classes only on Python 2 in 2018/2019. This release has also been tested on Python 3.6 on Linux.&lt;/li&gt;&lt;li&gt;Lots of deprecated code removals, to make a sleeker, less confusing Twisted.&lt;/li&gt;&lt;li&gt;60+ closed tickets. &lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;For more information, check the NEWS file (link provided below).&lt;br /&gt;&lt;br /&gt;You can find the downloads &lt;a href=&quot;https://pypi.python.org/pypi/Twisted&quot;&gt;on PyPI&lt;/a&gt; (or alternatively &lt;a href=&quot;http://twistedmatrix.com/trac/wiki/Downloads&quot;&gt;our website&lt;/a&gt;). The NEWS file is also available &lt;a href=&quot;https://github.com/twisted/twisted/blob/twisted-17.1.0/NEWS&quot;&gt;on GitHub&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Many  thanks to everyone who had a part in this release - the supporters of  the Twisted Software Foundation, the developers who contributed code as  well as documentation, and all the people building great things with  Twisted!&lt;br /&gt;&lt;br /&gt;Twisted Regards,&lt;br /&gt;Amber Brown (HawkOwl)&lt;img src=&quot;http://feeds.feedburner.com/~r/TwistedMatrixLaboratories/~4/I-dN05prNnU&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot; /&gt;</description>
+	<pubDate>Sat, 11 Feb 2017 02:08:11 +0000</pubDate>
+</item>
+<item>
+	<title>Weekly Python StackOverflow Report: (lx) stackoverflow python report</title>
+	<guid>http://python-weekly.blogspot.com/2017/02/lx-stackoverflow-python-report.html</guid>
+	<link>http://python-weekly.blogspot.com/2017/02/lx-stackoverflow-python-report.html</link>
+	<description>These are the ten most rated questions at &lt;a href=&quot;http://www.stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt; last week.&lt;br /&gt;Between brackets: [&lt;b&gt;question score&lt;/b&gt; / answers count]&lt;br /&gt;Build date: 2017-02-10 20:10:36 GMT&lt;br /&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42107442&quot; target=&quot;_blank&quot;&gt;Why is copying a shuffled list much slower?&lt;/a&gt; - [&lt;b&gt;56&lt;/b&gt;/3]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42059646&quot; target=&quot;_blank&quot;&gt;Concatenate tuples using sum()&lt;/a&gt; - [&lt;b&gt;13&lt;/b&gt;/2]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42109419&quot; target=&quot;_blank&quot;&gt;Extract text with multiple separators&lt;/a&gt; - [&lt;b&gt;11&lt;/b&gt;/5]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42049448&quot; target=&quot;_blank&quot;&gt;Why does copying a &amp;gt;= 16 GB Numpy array set all its elements to 0?&lt;/a&gt; - [&lt;b&gt;10&lt;/b&gt;/1]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42095393&quot; target=&quot;_blank&quot;&gt;Python: Map a function over recursive iterables&lt;/a&gt; - [&lt;b&gt;8&lt;/b&gt;/2]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42130597&quot; target=&quot;_blank&quot;&gt;Slow recursion in python&lt;/a&gt; - [&lt;b&gt;8&lt;/b&gt;/1]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42154606&quot; target=&quot;_blank&quot;&gt;python numpy: how to construct a big diagonal array(matrix) from two small array&lt;/a&gt; - [&lt;b&gt;8&lt;/b&gt;/1]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42119721&quot; target=&quot;_blank&quot;&gt;Find where f(x) changes in a list, with bisection (in Python)&lt;/a&gt; - [&lt;b&gt;7&lt;/b&gt;/3]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42148280&quot; target=&quot;_blank&quot;&gt;Pandas TimeGrouper and Pivot?&lt;/a&gt; - [&lt;b&gt;7&lt;/b&gt;/3]&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/42140866&quot; target=&quot;_blank&quot;&gt;Debugging a Neural Network&lt;/a&gt; - [&lt;b&gt;7&lt;/b&gt;/0]&lt;/li&gt;&lt;/ol&gt;</description>
+	<pubDate>Fri, 10 Feb 2017 20:11:00 +0000</pubDate>
+</item>
+<item>
+	<title>Mike Driscoll: Book Review: Murach’s Python Programming</title>
+	<guid>http://www.blog.pythonlibrary.org/2017/02/10/book-review-murachs-python-programming/</guid>
+	<link>http://www.blog.pythonlibrary.org/2017/02/10/book-review-murachs-python-programming/</link>
+	<description>&lt;div class=&quot;pf-content&quot;&gt;&lt;p&gt;I review books for the &lt;a href=&quot;http://www.i-programmer.info/&quot; target=&quot;_blank&quot;&gt;i-programmer&lt;/a&gt; website from time to time and they recently gave me a copy of &lt;a href=&quot;http://amzn.to/2kbuzpv&quot; target=&quot;_blank&quot;&gt;Murach&amp;#8217;s Python Programming&lt;/a&gt; by Michael Urban and Joel Murach. This book is long at almost 600 pages and it&amp;#8217;s pretty expensive for the paperback. For those of you with short attention spans, I give you the Quick Review. For those who would like something a bit more in-depth, you will need to click through to see the rest.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Quick Review&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Why I picked it up:&lt;/strong&gt; In this case, because i-programming asked me to&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt; 
+&lt;li&gt;&lt;strong&gt;Why I finished it:&lt;/strong&gt; Because this book is well written and fairly interesting&lt;/li&gt; 
+&lt;li&gt;&lt;strong&gt;I’d give it to:&lt;/strong&gt; Someone who wants to learn Python&lt;/li&gt;
+
+&lt;p&gt;&lt;span id=&quot;more-6174&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Book Formats&lt;/h3&gt;
+&lt;p&gt;You can get a DRM eBook from Murach itself or just buy the paperback at an online store near you.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Book Contents&lt;/h3&gt;
+&lt;p&gt;This book has 4 sections, 18 chapters and is 576 pages long.&lt;/p&gt;
+&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Full Review&lt;/h3&gt;
+&lt;p&gt;Murach isn&amp;#8217;t a publisher I was familiar with so I was surprised when I started reading their Python Programming book and found it to be of such high quality. The book is written by Michael Urban and Joel Murach. It is based on Python 3 and is an introductory book in nature. The book is split into 4 sections with a total of 18 chapters. Let&amp;#8217;s spend some time going over the book, chapter-by-chapter.&lt;/p&gt;
+&lt;p&gt;The first section contains 8 chapters. Chapter 1 is a pretty basic introductory chapter and aims to show you the difference between Python and other languages. It also goes over how to use IDLE (Python&amp;#8217;s included IDE) and run a &amp;#8220;Hello, World&amp;#8221; type program. The authors also explain how Python &amp;#8220;compiles&amp;#8221; the source code to byte code before running it. Finally the chapter gives some tips on how to fix syntax and runtime errors.&lt;/p&gt;
+&lt;p&gt;Chapter 2 gives an introduction to coding in Python. You will learn about comments, using built-in functions, some of Python&amp;#8217;s data types, arithmetic expressions, string concatenation and quite a few other topics. There are also two small programs that the authors implement at the end of the chapter using the concepts that you have learned so far.&lt;/p&gt;
+&lt;p&gt;Chapter 3 digs into control statements. In this case, we are talking about Python&amp;#8217;s if/elif/else statements as well as how relational and logical operators work in Python. This chapter also covers Python&amp;#8217;s looping structures (while and for loops), as well as break and continue statements. I didn&amp;#8217;t see any mention of using the &amp;#8220;else&amp;#8221; statement with your loops, but I&amp;#8217;m not sure I&amp;#8217;ve ever seen that in a book before. Regardless, they update the programs from the previous chapter and demonstrate a couple of new ones using the new concepts in chapter 3.&lt;/p&gt;
+&lt;p&gt;Chapter 4 covers the definition and use of functions and modules. This is a fun littler chapter where you&amp;#8217;ll learn about default values, as well as local and global variables. You will also get to create a module, document it and learn how to import it. They also mention Python&amp;#8217;s standard library and describe how to import modules from it. Finally we learn how to plan out a program and then code one up.&lt;/p&gt;
+&lt;p&gt;Chapter 5 is where we learn how testing and debugging a program. You will learn about the common Python errors and some techniques for testing and debugging your software. As expected, they use IDLE&amp;#8217;s debugger as well as print() statements to help in debugging one&amp;#8217;s code. Interestingly we don&amp;#8217;t learn about exception handling until chapter 8.&lt;/p&gt;
+&lt;p&gt;Chapter 6 is about Python&amp;#8217;s lists and tuple data types. You will learn the basics of working with lists in this chapter and you will write three more programs throughout the chapter. Since tuples are immutable, their coverage is much less, but I think you learn more than enough to use them properly.&lt;/p&gt;
+&lt;p&gt;Chapter 7 is about how to use Python&amp;#8217;s to work with files. In this chapter you will learn how to open, create, read and write files. You will also learn about working with binary files and CSV files.&lt;/p&gt;
+&lt;p&gt;Chapter 8 is the exception handling chapter. It describes how exceptions work, how to handle single and multiple exceptions and how to extract information from the exception object. You will also learn about the finally clause and how to raise an exception yourself. This chapter wraps up sections one.&lt;/p&gt;
+&lt;p&gt;Section 2 is described as covering &amp;#8220;other concepts and skills&amp;#8221; and is only 5 chapters long. I&amp;#8217;ll keep this fairly brief:&lt;/p&gt;
+&lt;p&gt;In chapter 9, we learn about numbers in general. Here are some examples: floating point numbers, formatting numbers, using the locale module, rounding and the decimal module.&lt;/p&gt;
+&lt;p&gt;Chapter 10 is all about strings. We will learn a bit about Unicode, slicing, indexes, splitting and joining strings. We will also create or enhance 4 programs. The most complex is a Hangman game and is well worth reading about as it splits the functionality of the game into multiple modules.&lt;/p&gt;
+&lt;p&gt;For chapter 11, the topic is working with dates and times. You will learn the basics of Python&amp;#8217;s time and datetime modules in this chapter and create a few programs using them too.&lt;/p&gt;
+&lt;p&gt;In chapter 12, we finally learn about one of Python&amp;#8217;s most important data types: The dictionary (or dict). Here you will learn how to create a dictionary as well as get, set, add items and delete items. There is also some information on converting a dict to a list and adding more complex values to your dictionaries. As usual, you will create some simple programs in this chapter.&lt;/p&gt;
+&lt;p&gt;This section wraps up in chapter 13 where we learn about recursion and algorithms. About half the chapter is devoted to learning about recursion works and how it works in Python. The rest covers some common algorithms, such as the factorial, the Fibonacci sequence and the Towers of Hanoi.&lt;/p&gt;
+&lt;p&gt;Section 3 is about Object Oriented Programming (OOP) in Python. It only has 3 chapters. Basically these 3 chapters cover defining and using your classes, inheritance and the design aspect you need to use when doing object oriented programming. You will create more fun mini-programs in this chapter and learn lots of good information such as how polymorphism works, overriding methods, creating custom exceptions, etc.&lt;/p&gt;
+&lt;p&gt;The last two chapters are in Section 4. Chapter 17 is an introduction to databases and then dives into using Python&amp;#8217;s SQLite module, sqlite3. It does not talk about any of the 3rd party modules you can use to connect to enterprise level databases though. By the end of the chapter, you should know how to create a database as well as use SELECT statemtns and INSERT, UPDATE and DELETE statements in SQL.&lt;/p&gt;
+&lt;p&gt;The final chapter is chapter 18. It is an introduction to creating a GUI program using tkinter. The tkinter module has entire books based on it, so don&amp;#8217;t expect this chapter to cover all that much. What you will learn is how two write a simple Future Value Calculator application, which is nice. But you won&amp;#8217;t learn much more than that. &lt;/p&gt;
+&lt;p&gt;Overall I thought this book was well thought out and executed. The book uses a &amp;#8220;paired pages&amp;#8221; approach here it has syntax, guidelines and examples on the right page and extra explanatory information on the left. I&amp;#8217;m sure this works well in book form, but in their eBook version it is a bit awkward. In fact, I really can&amp;#8217;t recommend the eBook that you get direct from Murach. It uses a DRM application called LockLizard Safeguard that you have to download. You will get a license file that you will need to run before you can open your book, which is in a .pdc format. The application currently only support Windows and Mac, so for Linux you are just plain out of luck. The application looks like Adobe&amp;#8217;s Reader application, but it&amp;#8217;s extremely limited. You cannot highlight or add comments. I used it in Windows and found that if you had the Bookmarks pane in focus, then you could only scroll in that. You would need to click back in the book pane to be able to scroll there. &lt;/p&gt;
+&lt;p&gt;Anyway besides the obnoxious eBook client, the book is actually quite good. I feel like it covered the topics well and included some items that you don&amp;#8217;t always see in introductory Python books, such as the CSV, database and GUI examples. The rest of the book is pretty standard fair for a beginner&amp;#8217;s book, but the text is clear and the examples are interesting. I really like that you get to write mini-programs in almost all of the chapters and they almost always do something besides just printing out a string. I believe this is a worthy book for someone who wants to learn Python, but if you already know Python, then this book probably won&amp;#8217;t have anything of interest for you.&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;http://amzn.to/2kbuzpv&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://www.blog.pythonlibrary.org/wp-content/uploads/2017/02/murachs-python-programming-150x150.jpg&quot; alt=&quot;&quot; width=&quot;150&quot; height=&quot;150&quot; class=&quot;aligncenter size-thumbnail wp-image-6178&quot; /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;h3&gt;Murach&amp;#8217;s Python Programming&lt;/h3&gt;
+&lt;p&gt;by Michael Urban and Joel Murach&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://amzn.to/2kbuzpv&quot; target=&quot;_blank&quot;&gt;Amazon&lt;/a&gt;&lt;/strong&gt;
+&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Other Book Reviews&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blog.pythonlibrary.org/2016/06/15/book-review-modular-programming-with-python/&quot; target=&quot;_blank&quot;&gt;Module Programming with Python&lt;/a&gt; by Erik Westra&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blog.pythonlibrary.org/2015/12/11/book-review-python-playground-geeky-projects-for-the-curious-programmer/&quot; target=&quot;_blank&quot;&gt;Python Playground – Geeky Projects for the Curious Programmer&lt;/a&gt; by Mahesh Venkitachalam&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blog.pythonlibrary.org/2014/12/04/ebook-review-ipython-notebook-essentials/&quot; target=&quot;_blank&quot;&gt;IPython Notebook Essentials&lt;/a&gt; by L. Felipe Martins&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blog.pythonlibrary.org/2014/05/01/ebook-review-creating-apps-in-kivy/&quot; target=&quot;_blank&quot;&gt;Creating Apps in Kivy&lt;/a&gt; by Dusty Phillips&lt;/li&gt;
+&lt;li&gt;Kivy – &lt;a href=&quot;http://www.blog.pythonlibrary.org/2013/12/17/ebook-review-kivy-interactive-applications-python/&quot;&gt;Interactive Applications in Python&lt;/a&gt; by Roberto Ulloa&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blog.pythonlibrary.org/2013/11/08/ebook-review-instant-flask-web-development/&quot; target=&quot;_blank&quot;&gt;Instant Flask Web Development&lt;/a&gt; by Ron DuPlain&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blog.pythonlibrary.org/2013/04/19/ebook-review-real-python/&quot; target=&quot;_blank&quot;&gt;Real Python&lt;/a&gt; by Fletcher Heisler&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blog.pythonlibrary.org/2010/08/22/book-review-python-3-object-oriented-programming/&quot;&gt;Python 3 Object Oriented Programming&lt;/a&gt; by Dusty Phillips&lt;/li&gt;
+&lt;/ul&gt;</description>
+	<pubDate>Fri, 10 Feb 2017 18:15:50 +0000</pubDate>
+</item>
+<item>
+	<title>Kushal Das: Running gotun inside Jenkins</title>
+	<guid>https://kushaldas.in/posts/running-gotun-inside-jenkins.html</guid>
+	<link>https://kushaldas.in/posts/running-gotun-inside-jenkins.html</link>
+	<description>&lt;!--
+.. title: Running gotun inside Jenkins
+.. slug: running-gotun-inside-jenkins
+.. date: 2017-02-10T21:27:38+05:30
+.. tags: Fedora, Atomic, Python
+.. link:
+.. description:
+.. type: text
+--&gt;
+
+&lt;p&gt;By design &lt;a href=&quot;https://gotun.rtfd.io&quot;&gt;gotun&lt;/a&gt; is a command line tool which can be
+called from other scripts, or any larger system. In the world of CI, Jenkins is
+the biggest name. So, one of the goals was also being able to execute within
+Jenkins for tests.&lt;/p&gt;
+
+&lt;h3&gt;Setting up a Jenkins instance for test&lt;/h3&gt;
+
+&lt;p&gt;vIf you don’t have a setup for Jenkins already, you can just create a new one
+for staging using the &lt;a href=&quot;https://hub.docker.com/_/jenkins/&quot;&gt;official container&lt;/a&gt;.
+For my example setup, I am using the same at &lt;a href=&quot;http://status.kushaldas.in&quot;&gt;http://status.kushaldas.in&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Setting up the first job&lt;/h3&gt;
+
+&lt;p&gt;My only concern was how to setup the secrets for authentication information on
+Jenkins (remember I am a newbie in Jenkins). &lt;a href=&quot;https://support.cloudbees.com/hc/en-us/articles/203802500-Injecting-Secrets-into-Jenkins-Build-Jobs&quot;&gt;This blog
+post&lt;/a&gt;
+helped me to get it done. In the first job, I am creating the configuration (if
+in future we add something dynamic like the image name there). The secrets are
+coming from the ENV variables as described in the gotun docs. In the job, I am
+running the Fedora Atomic tests on the image.
+&lt;a href=&quot;http://status.kushaldas.in/job/gotun/9/console&quot;&gt;Here&lt;/a&gt; is one example console
+output.&lt;/p&gt;
+
+&lt;h3&gt;Running the upstream Atomic host tests in gotun inside Jenkins&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://kushaldas.in/images/jenkins_jenats1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;My next task was to run the upstream Project Atomic host tests using the
+similar setup. All the configuration file for the tests are available on this
+&lt;a href=&quot;https://github.com/kushaldas/jenats&quot;&gt;git repo&lt;/a&gt;. As explained in a &lt;a href=&quot;https://kushaldas.in/posts/testing-fedora-atomic-images-using-upstream-atomic-host-tests.html&quot;&gt;previous
+post&lt;/a&gt;,
+&lt;em&gt;onevm.py&lt;/em&gt; creates the inventory file for Ansible, and then &lt;em&gt;runsetup.sh&lt;/em&gt;
+executes the playbook. You can view the job output
+&lt;a href=&quot;http://status.kushaldas.in/job/atomic-host-tests/8/console&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For both the jobs, I am executing a Python script to create the job yaml files.&lt;/p&gt;</description>
+	<pubDate>Fri, 10 Feb 2017 15:57:00 +0000</pubDate>
+</item>
+<item>
+	<title>Coding Diet: Python and Lambdas</title>
+	<guid>https://allanderek.github.io/posts/python-and-lambdas/</guid>
+	<link>https://allanderek.github.io/posts/python-and-lambdas/</link>
+	<description>&lt;div&gt;&lt;p&gt;I come from a functional programming background, so I a lot of love for functions and so-called anonymous functions or lambdas. However, I have realised that I don't make use of Python's lambda syntax much, and I wanted to articulate why. This may mostly sound pretty negative towards lambdas, but bear in mind I'm certainly not against lambdas in general.&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;lambda&lt;/code&gt; expression could always be avoided by simply defining the function in question. So the question becomes when is a &lt;code&gt;lambda&lt;/code&gt; more readable than a definition? That is almost always because the function you're attempting to create is so simple that the definition syntax gets in the way. It is often used when the function in question is going to be used as an argument to some method. For example the &lt;code&gt;sort&lt;/code&gt; method on a list takes as argument they &lt;code&gt;key&lt;/code&gt; to be used when comparing the elements. So if you have a list of items and you want to sort them by their prices you can do something such as:&lt;/p&gt;
+&lt;pre class=&quot;code literal-block&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;We could of course have gotten the use of &lt;code&gt;lambda&lt;/code&gt; with a definition:&lt;/p&gt;
+&lt;pre class=&quot;code literal-block&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;This is not &lt;strong&gt;quite&lt;/strong&gt; equivalent because it introduces a new name into the current scope that would not otherwise have been there, but I don't ever recall reaching for a &lt;code&gt;lambda&lt;/code&gt; expression in order to avoid polluting the name space.&lt;/p&gt;
+&lt;p&gt;We could even define a generic higher-order function to make a function out of attribute access.&lt;/p&gt;
+&lt;pre class=&quot;code literal-block&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;f_attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attr_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;attr_getter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;getattr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attr_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attr_getter&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'price'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;This is surely worse than the first two attempts, but if you have multiple sorts to do, then using definitions can get tedious:&lt;/p&gt;
+&lt;pre class=&quot;code literal-block&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;margin&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;as compared with the lambda version:&lt;/p&gt;
+&lt;pre class=&quot;code literal-block&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;The &lt;code&gt;f_attr&lt;/code&gt; version is similar:&lt;/p&gt;
+&lt;pre class=&quot;code literal-block&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'price'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'quantity'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'margin'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;In fact that could be done with a loop:&lt;/p&gt;
+&lt;pre class=&quot;code literal-block&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attribute&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'price'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'quantity'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'margin'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f_attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;do_something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list_of_items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;I think the &lt;code&gt;lambda&lt;/code&gt; version is at least sometimes more readable. However, I often miss the self-documenting nature of a definition, in that giving the function a name acts as some pretty decent documentation especially for the kind of simple function you might otherwise use a &lt;code&gt;lambda&lt;/code&gt; expression for.&lt;/p&gt;
+&lt;p&gt;So, for a &lt;code&gt;lambda&lt;/code&gt; expression to be the right choice, the function in question has to be so simple as to not benefit from the extra documentation afforded by its name (such as simple attribute access). &lt;/p&gt;
+&lt;p&gt;I just don't seem to find myself in that situation very often. Perhaps I'm just not making my own functions general enough by accepting functions as arguments.&lt;/p&gt;&lt;/div&gt;</description>
+	<pubDate>Fri, 10 Feb 2017 14:39:20 +0000</pubDate>
+</item>
+<item>
+	<title>بايثون العربي: كيف تقوم بكتابة ملف إقراني رائع لمشروعك على Github</title>
+	<guid>http://pyarab.com/2017/02/write-a-great-readme-for-your-github-project.html</guid>
+	<link>http://pyarab.com/2017/02/write-a-great-readme-for-your-github-project.html</link>
+	<description>&lt;p&gt;عندما تقوم بكتابة ملف إقراني جيد فهو يساعد مشروعك على الوقوف والبروز في الواجهة وعدم بقاءه في دهاليس مشاريع Github المظلمة، وهذا ماسنقوم بالتكلم عنه في هذه التدوينة وماهي العناصر الأساسية التي يجب على كل ملف إقراني لمشروع مفتوح المصدر أن يحتوي عليه كما سنقوم بتقديم في أخر هذه التدوينة قالب لملف إقراني يمكنك إستخدامه في مشاريعك.&lt;span id=&quot;more-782&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://pyarab.com/wp-content/uploads/2017/02/Capture.png&quot;&gt;&lt;img class=&quot;wp-image-785 size-full&quot; src=&quot;http://pyarab.com/wp-content/uploads/2017/02/Capture.png&quot; alt=&quot;ملف إقراني &quot; width=&quot;924&quot; height=&quot;558&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;يقوم المطورين بإطلاق مشاريع مفتوحة المصدر الجديدة كل يوم على موقع Github وبالتالي فإن نسبة ظهور مشروعك على الواجهة صغيرة بسبب المنافسة الشرسة الموجودة، على كل حال هناك بعض الطرق يمكن القيام بها من أجل زيادة فرض الإستلاء على إنتباه المطورين الأخرين، والتقنية الوحيدة والفعالة هي إستخدام ملف إقراني مفهوم ومنسق بشكل جيد.&lt;/p&gt;
+&lt;p&gt;يجب على كل ملف إقراني موجود في مشروع ما أن يحتوي على مايلي :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ماهو مهمة ودور مشروعك&lt;/li&gt;
+&lt;li&gt;كيفية تثبيته&lt;/li&gt;
+&lt;li&gt;مثال عن الإستعمال&lt;/li&gt;
+&lt;li&gt;كيفية إعداد بيئة التطوير&lt;/li&gt;
+&lt;li&gt;الترخيص ومعلومات عن المطور&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;سنقوم بشرح كل واحدة على حدى وفي أخر الموضوع سنزودك بقالب لملف إقراني يمكنك إستعماله في مشروعك.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ماهو مهمة ودور مشروعك:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;إن المستخدمين المحتملين لمشروعك&lt;strong&gt; &lt;/strong&gt;يجب أن يكونوا قادرين على تحديد وبسرعة الغرض من مشروعك فأحرص على توفير هذه المعلومة في أول الملف والطريقة الأمثل لعمل ذلك هي بتوفير مايلي :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; فقرة واحدة مختصرة تصف فيها المشروع الخاص بك&lt;/li&gt;
+&lt;li&gt;لقطة تمثيلية، ومن الأفضل توفير ملف GIF وهذا سيقوم بتعريف مشروعك بالحركة&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;كيفية تثبيته:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;  &lt;/strong&gt;إذا أعجب المستخدمين بمشروعك سيريدون تعلم كيفية إستخدامه وربما ستكون كيفية إستخدامه أو تثبينه سهلة بالنسبة لك إلا أن المستخدمين سيصابون بالإحباط إذا لم تضع لهم التعليمات اللازم إتباعها للقيام بعملية التثبيت و طبعا سيبتعدون عن مشروعك خاصة إذا كان معقد لذلك عليك جعل هذه الخطوة بسيطة للغاية والطريقة الصحيحة لفعل ذلك :&lt;/p&gt;
+&lt;p&gt;وجود كتلة برمجية في ملف إقراني لتظهر لهم بالضبط ماعليهم كتابته في الشيل لتثبيت مشروعك وأكيد يجب ان يكون ذلك على جميع المنصات التي يدعمها هذا الأخير خاصة إذا كان هناك فرق في عملية التثبيت في كل من (OS X/Linux/Windows).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;مثال عن الإستعمال:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;بجانب تعليمات التثبيت فإن وضع طريقة الإستعمال الجيد سيكون جيد ، فيجب أن تظهر للمستخدمين كيفية الحصول على النتائج المرجوة من وراء إستعمال مشروعك بعد عملية التثبيت ، وأنا أحب القيام بهذه العملية بوضع كتلة برمجية أخرى مع أمثلة مفيدة ومحفزة وذلك ليتعلم المستخديم كيفية كتابة الأوامر في الشيل أو التعامل مع الواجهة الرسومية لمشروعك بشكل صحيح .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;كيفية إعداد بيئة التطوير :&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;/strong&gt;بما أننا نتكلم عن مشروع مفتوح المصدر فإنه من الجيد مساعدة الأخرين على كيفية إحداث تغييرات وتحسينات و إدخالها على المشروع الأصلي ، الخطوة الاولى هي مساعدة المساهمين المحتملين على إنشاء بيئة التطوير لعزلها عن مشاريعهم الأخرى وعدم حدوث مشاكل ، ودائما فالطريقة الأفضل هي توفير كتلة برمجية مع تعليمات واصحة ل :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;كيفية تثبيت بيئة التطوير&lt;/li&gt;
+&lt;li&gt; تشغيل مثال ما للإختبار.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;الترخيص ومعلومات عن المطور&lt;/strong&gt; :&lt;/p&gt;
+&lt;p&gt;إن توفير الرخص ومعلومات الإتصال مهم لتوضيح الوضع القانوني لمشروعك، وموقع github يقترح إنشاء ملف نصي للرخص ووضعه على دليل المستودع الرئيسي وعلى الرغم من وجود هذه الإتفاقية فإنه من الجيد أيضا وضع قسم مختصر على ملف إقراني بالمعلومات التالية :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;معلومات الإتصال للمطور مثل صفحتك على تويتر أو عنوانك الإلكتروني&lt;/li&gt;
+&lt;li&gt;بيان سريع عن الرخصة .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;قالب مجاني لملف README.md لقراء بايثون العربي &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;أنا أمل أن تكون هذه المقالة قد ساعدتكم على تعلم بعض الخدع لإنشاء ملفات إقراني بطريقة فعالة وفيما يلي ستجدون مثال عن ملف إقراني إتبعت فيه الخطوات المذكوة أعلاه ويمكنك طبعا تغييره لما يناسب إحتياجاتكم و متطلباتكم .&lt;/p&gt;
+&lt;p&gt;يمكن تحميل الملف على الرابط التالي : &lt;a href=&quot;https://github.com/kader14/readme&quot;&gt;https://github.com/kader14/readme&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</description>
+	<pubDate>Fri, 10 Feb 2017 12:29:20 +0000</pubDate>
+</item>
+<item>
+	<title>Python Software Foundation: Discovering the Python Community in Zimbabwe at their first PyCon</title>
+	<guid>http://feedproxy.google.com/~r/PythonSoftwareFoundationNews/~3/DDswefMiYSg/discovering-python-community-in.html</guid>
+	<link>http://feedproxy.google.com/~r/PythonSoftwareFoundationNews/~3/DDswefMiYSg/discovering-python-community-in.html</link>
+	<description>&lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;span&gt;&lt;span&gt;On the heels of attending a successful PyCon in Namibia&amp;nbsp;in 2015, a small group of Python enthusiasts in Harare, Zimbabwe vowed to organize the first-ever PyCon held in Zimbabwe.&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+After months of planning on November 25th, 2016 they achieved their goal in dramatic fashion with an enormously successful sold-out conference at the ZESA National Training Center in Harare.&amp;nbsp;&lt;span&gt;I was privileged to give the keynote to an extremely attentive audience. For an hour, we had a tremendous time in discussing how to contribute to open-source successfully and how to grow ideas into successful open-source projects.&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div class=&quot;separator&quot;&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div class=&quot;separator&quot;&gt;
+&lt;a href=&quot;https://2.bp.blogspot.com/-A4tzgEXp2K0/WJv6JoTfJMI/AAAAAAAABEU/K-EPB0JlRCgT1-iUeda47QrLvt7wTdkVACLcB/s1600/py_zim_3.jpg&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;213&quot; src=&quot;https://2.bp.blogspot.com/-A4tzgEXp2K0/WJv6JoTfJMI/AAAAAAAABEU/K-EPB0JlRCgT1-iUeda47QrLvt7wTdkVACLcB/s320/py_zim_3.jpg&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;
+In all my years of speaking, I've never had such an incredible audience. Often at technical conferences audience members are more engaged with their smartphones than the speaker. Not so at PyConZim! Questions were thoughtful and engaging. Truly a pleasure.&lt;br /&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+Throughout the conference many enjoyable talks were given. I enjoyed Dennis Murekachiro's inspiring talk on how to be a game-changer as he encouraged Zimbabwe&amp;nbsp;&lt;span&gt;technologists&lt;/span&gt;&lt;span&gt;&amp;nbsp;not to settle for &quot;good enough&quot; but to work hard to use technology to better themselves and the communities they live in.&amp;nbsp;&lt;/span&gt;&lt;span&gt;Tendai Marengerke's talk on how to create reproducible research in Python was absolutely fascinating; it's a must-watch for anybody using Python in an academic setting.&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+Petrus Janse van Rensburg from South Africa gave an outstanding overview of challenges that low-bandwidth connections create in Africa and how he is working to solve them by re-designing the way e-commerce platforms operate. I can virtually guarantee we'll be hearing a more about him and his work in the coming months and years.&lt;/div&gt;
+&lt;div class=&quot;separator&quot;&gt;
+&lt;a href=&quot;https://1.bp.blogspot.com/-3D62B6clqng/WJv6JeF6QvI/AAAAAAAABEQ/tYW7XW73nAMiCO-jWbuOaSDNRUtwqQPegCEw/s1600/py_zim_1.jpg&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;213&quot; src=&quot;https://1.bp.blogspot.com/-3D62B6clqng/WJv6JeF6QvI/AAAAAAAABEQ/tYW7XW73nAMiCO-jWbuOaSDNRUtwqQPegCEw/s320/py_zim_1.jpg&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+One of the most astonishing things about PyConZim is the way in which every single attendee is brilliant and, without fail, engaged with pragmatic ideas about how to use Python to make a better life for their communities. One could go to every PyCon on Earth and never find one as inspiring as PyCon Zimbabwe.&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+The highlight for me, though, was having the chance to meet Marlene Hangami and Ronald Maravanyika.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+Marlene and Ronald have single-handedly started an organization to teach Python to young girls across Zimbabwe.&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+Fueled by a desire to simply improve the lives of girls in their country, they've started free workshops in community centers and now operate in over forty community centers across the country.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+They've had to battle a number of difficult obstacles that would discourage most people but they're continuing on.&lt;/div&gt;
+&lt;div&gt;
+As a direct result of my trip to PyConZim, I've started working with Ronald and Marlene to start a program to bring female software developers to Zimbabwe to work with selected girls on Python-based projects to help out in their communities.&lt;br /&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+Mentors participate in projects that girls work on by volunteering as little as four hours of their time and conduct their mentorship via video-conference and email. It's a very simple way to advance the case for women in technology in Africa and beyond.&amp;nbsp;&lt;span&gt;More information on mentorship programs and application information is available &lt;/span&gt;&lt;a href=&quot;http://www.zimbopy.com/&quot;&gt;here&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;
+My humble thanks to everybody at the Python Software Foundation for sponsoring my trip to Zimbabwe and for sponsoring the conference itself.&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div class=&quot;separator&quot;&gt;
+&lt;a href=&quot;https://4.bp.blogspot.com/-nHSUqE6870A/WJv6Jw5nShI/AAAAAAAABEY/owXznUdopLoFJNDlRKwor8WfXBEKOEo-QCEw/s1600/py_zim_4.jpg&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;265&quot; src=&quot;https://4.bp.blogspot.com/-nHSUqE6870A/WJv6Jw5nShI/AAAAAAAABEY/owXznUdopLoFJNDlRKwor8WfXBEKOEo-QCEw/s400/py_zim_4.jpg&quot; width=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div class=&quot;feedflare&quot;&gt;
+&lt;a href=&quot;http://feeds.feedburner.com/~ff/PythonSoftwareFoundationNews?a=DDswefMiYSg:iuhVaBOB7GM:yIl2AUoC8zA&quot;&gt;&lt;img src=&quot;http://feeds.feedburner.com/~ff/PythonSoftwareFoundationNews?d=yIl2AUoC8zA&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~ff/PythonSoftwareFoundationNews?a=DDswefMiYSg:iuhVaBOB7GM:-BTjWOF_DHI&quot;&gt;&lt;img src=&quot;http://feeds.feedburner.com/~ff/PythonSoftwareFoundationNews?i=DDswefMiYSg:iuhVaBOB7GM:-BTjWOF_DHI&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~ff/PythonSoftwareFoundationNews?a=DDswefMiYSg:iuhVaBOB7GM:F7zBnMyn0Lo&quot;&gt;&lt;img src=&quot;http://feeds.feedburner.com/~ff/PythonSoftwareFoundationNews?i=DDswefMiYSg:iuhVaBOB7GM:F7zBnMyn0Lo&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~ff/PythonSoftwareFoundationNews?a=DDswefMiYSg:iuhVaBOB7GM:V_sGLiPBpWU&quot;&gt;&lt;img src=&quot;http://feeds.feedburner.com/~ff/PythonSoftwareFoundationNews?i=DDswefMiYSg:iuhVaBOB7GM:V_sGLiPBpWU&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src=&quot;http://feeds.feedburner.com/~r/PythonSoftwareFoundationNews/~4/DDswefMiYSg&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot; /&gt;</description>
+	<pubDate>Fri, 10 Feb 2017 10:30:16 +0000</pubDate>
+</item>
+<item>
+	<title>Django Weekly: Django Weekly 25</title>
+	<guid>http://djangoweekly.com/blog/post/django-weekly-25</guid>
+	<link>http://djangoweekly.com/blog/post/django-weekly-25</link>
+	<description>&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;container-padding content&quot; align=&quot;left&quot;&gt;&lt;div class=&quot;title&quot;&gt;Worthy Read&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;subtitle&quot;&gt;&lt;a href=&quot;https://simpleisbetterthancomplex.com/tutorial/2017/02/06/how-to-implement-case-insensitive-username.html&quot; target=&quot;_blank&quot;&gt;How to Implement Case-Insensitive Username&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;body-text&quot;&gt;How to implement a case insensitive authentication using the built in Django User? &lt;br /&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;user_auth&lt;/div&gt;&lt;/em&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;subtitle&quot;&gt;&lt;a href=&quot;http://4url.in/L4PWwP5z&quot; target=&quot;_blank&quot;&gt;ScyllaDB on Compose&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;body-text&quot;&gt;A blazing fast, drop-in replacement for Cassandra. Try it now for free. &lt;br /&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;sponsor&lt;/div&gt;&lt;/em&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;subtitle&quot;&gt;&lt;a href=&quot;https://www.vinta.com.br/blog/2017/dont-forget-stamps-testing-email-content-django/&quot; target=&quot;_blank&quot;&gt;Don't forget the stamps: testing email content in Django&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;body-text&quot;&gt;django-templated-email is oriented towards sending templated emails. The library supports template inheritance, adding cc'd and bcc'd recipients, configurable template naming and location. Code snippets on using it nad testing using the mock library. &lt;br /&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;email&lt;/div&gt;&lt;/em&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;subtitle&quot;&gt;&lt;a href=&quot;https://micropyramid.com/blog/django-conditional-expression-in-queries/&quot; target=&quot;_blank&quot;&gt;Django Conditional Expressions in Queries&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;body-text&quot;&gt;Django Conditional Expressions are added in Django 1.8. By using Conditional Expressions we can use &quot;If...Elif...Else&quot; expressions while querying the database. Conditional expressions executes series of conditions while querying the database, It checks the condition for every record of the table in database and returns the matching results. Conditional expressions can be nested and also can be combined. &lt;br /&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;orm&lt;/div&gt;,&lt;/em&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;Query&lt;/div&gt;&lt;/em&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;subtitle&quot;&gt;&lt;a href=&quot;https://medium.com/@theSquashSH/reconciling-djangos-mvc-templates-with-react-components-3aa986cf510a&quot; target=&quot;_blank&quot;&gt;Reconciling Django’s MVC &amp;amp; Templates with React Components&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;body-text&quot;&gt;We decided to write our backend in Django and our frontend in React. The combination is not unusual these days, but if you’ve ever tried it you’ve probably found there’s some friction between page composition with Django’s template system, and React’s component model. &lt;br /&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;reactjs&lt;/div&gt;&lt;/em&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;subtitle&quot;&gt;&lt;a href=&quot;http://4url.in/5xk06Pag&quot; target=&quot;_blank&quot;&gt;3 Ways Our Dev Teams Create Velocity with Multi-System Integrations.&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;body-text&quot;&gt;How xMatters Uses Toolchains to Move Process Forward &lt;br /&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;sponsor&lt;/div&gt;&lt;/em&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;subtitle&quot;&gt;&lt;a href=&quot;https://scotch.io/tutorials/build-a-rest-api-with-django-a-test-driven-approach-part-1&quot; target=&quot;_blank&quot;&gt;Build a REST API with Django – A Test Driven Approach: Part 1&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;body-text&quot;&gt;Basic tutorial on DRF based api and testing it as we go along. &lt;br /&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;testing&lt;/div&gt;,&lt;/em&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;DRF&lt;/div&gt;&lt;/em&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;subtitle&quot;&gt;&lt;a href=&quot;https://medium.com/@jinkwon711/django-allauth-facebook-login-b536444cbc6b#.odcej3uv1&quot; target=&quot;_blank&quot;&gt;Django-allauth Facebook Login&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;body-text&quot;&gt;Step by Step guide on integrating facebook loging using django-allauth. &lt;br /&gt; &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;django-allauth&lt;/div&gt;&lt;/em&gt;&lt;/div&gt;&lt;br /&gt; &lt;br /&gt;&lt;div class=&quot;title&quot;&gt;Projects&lt;/div&gt;&lt;div class=&quot;hr&quot;&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;subtitle&quot;&gt;&lt;a href=&quot;https://github.com/brejoc/django-intercoolerjs&quot; target=&quot;_blank&quot;&gt;django-intercoolerjs&lt;/a&gt; - &lt;small&gt;3 Stars, 0 Fork&lt;/small&gt;&lt;/div&gt;&lt;div class=&quot;body-text&quot;&gt;Django wrapper for intercooler.js - AJAX With Attributes: There is no need to be complex.&lt;/div&gt;&lt;br /&gt;&lt;img src=&quot;http://www.launchbit.com/taz-pixel/11284-6650-111&quot; /&gt;&lt;img src=&quot;http://www.launchbit.com/taz-pixel/11284-6764-111&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</description>
+	<pubDate>Fri, 10 Feb 2017 09:21:13 +0000</pubDate>
+</item>
+<item>
+	<title>Import Python: Import Python Weekly Issue 111 - Sublime3 and vim for setup, Think Python 2nd ed free</title>
+	<guid>http://importpython.com/blog/post/import-python-weekly-issue-111-sublime3-and-vim-setup-think-python-2nd-ed-free</guid>
+	<link>http://importpython.com/blog/post/import-python-weekly-issue-111-sublime3-and-vim-setup-think-python-2nd-ed-free</link>
+	<description>&lt;table&gt;
+                    &lt;tbody&gt;&lt;tr&gt;
+                        &lt;td class=&quot;container-padding content&quot; align=&quot;left&quot;&gt;
+                            &lt;div class=&quot;title&quot;&gt;
+                                Worthy
+                                Read
+                            &lt;/div&gt;
+                            &lt;br /&gt;
+                            
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;https://www.kennethreitz.org/essays/sublime-text-3-heaven&quot; target=&quot;_blank&quot;&gt;Sublime Text 3 and Python -  Kenneth Reitz&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            I decided to revisit my editor configuration the other night, and experimented with every possible editor I could think of / imagine. I heavily configured vim (neovim), PyCharm, Eclipse, Emacs (Spacemacs), VSCode, Atom, Textual, and more. I knew I was going to stay put with my choice of Sublime Text 3 (which I have been using for 5+ years), but it's nice to have validation. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;sublime&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://4url.in/BlkD1pjd&quot; target=&quot;_blank&quot;&gt;ScyllaDB on Compose&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                                        
+                                    
+                                            A blazing fast, drop-in replacement for Cassandra. Try it now for free. 
+                                    
+                                &lt;/div&gt;
+                                &lt;div class=&quot;body-text&quot;&gt;&lt;em&gt;Sponsor&lt;/em&gt;&lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://greenteapress.com/wp/think-python-2e/&quot; target=&quot;_blank&quot;&gt;Think Python 2 Edition - Free Download&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            This is the second edition of Think Python, which uses Python 3 is out. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;book&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;https://blog.alookanalytics.com/2017/02/05/how-to-plot-your-own-bikejogging-route-using-python-and-google-maps-api/&quot; target=&quot;_blank&quot;&gt;How to plot your own bike/jogging route using Python and Google Maps API&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            Apart from being a data scientist, I also spend a lot of time on my bike. It is therefore no surprise that I am a huge fan of all kinds of wearable devices. Lots of the times though, I get quite frustrated with the data processing and data visualization software that major providers of wearable devices offer. That’s why I have been trying to take things to my own hands. Recently I have started to play around with plotting my bike route from Python using Google Maps API. My novice’s guide to all this follows in the post. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://www.liuchengxu.org/posts/use-vim-as-a-python-ide/&quot; target=&quot;_blank&quot;&gt;Use Vim as a Python IDE&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            I love vim and often use it to write Python code. Here are some useful plugins and tools for building a delightful vim python environment, escpecially for Vim8. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;vim&lt;/div&gt;,&lt;/em&gt;
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;editor&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;https://speakerdeck.com/playpauseandstop/python-3-dot-6-and-performance-a-love-story&quot; target=&quot;_blank&quot;&gt;Python 3.6 and Performance&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            Slides from Why Python 3.6 is faster than Python 3.5 talk. Also included a preview of new features of Python 3.6 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;python3.6&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://4url.in/XlPEGkLB&quot; target=&quot;_blank&quot;&gt;3 Ways Our Dev Teams Create Velocity with Multi-System Integrations.&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                                        
+                                    
+                                            How xMatters Uses Toolchains to Move Process Forward 
+                                    
+                                &lt;/div&gt;
+                                &lt;div class=&quot;body-text&quot;&gt;&lt;em&gt;Sponsor&lt;/em&gt;&lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://blog.lerner.co.il/python-function-brain-transplants/&quot; target=&quot;_blank&quot;&gt;Python function brain transplants&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            Did you know about __code__? 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;core-python&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://www.learndatasci.com/k-means-clustering-algorithms-python-intro/&quot; target=&quot;_blank&quot;&gt;K-Means &amp;amp; Other Clustering Algorithms: A Quick Intro with Python&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;k-means&lt;/div&gt;,&lt;/em&gt;
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;clustering&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://kracekumar.com/post/156769849745&quot; target=&quot;_blank&quot;&gt;Return Postgres data as JSON in Python&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            row_to_json and json_build_object usage along with code snippet for SQLAlchemy users. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;postgres&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://blog.cloudera.com/blog/2017/02/working-with-udfs-in-apache-spark/&quot; target=&quot;_blank&quot;&gt;Working with UDFs in Apache Spark&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            User-defined functions (UDFs) are a key feature of most SQL environments to extend the system’s built-in functionality.  UDFs allow developers to enable new functions in higher level languages such as SQL by abstracting their lower level language implementations.  Apache Spark is no exception, and offers a wide range of options for integrating UDFs with Spark SQL workflows. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;spark&lt;/div&gt;,&lt;/em&gt;
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;user defined functions&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://pbpython.com/categorical-encoding.html&quot; target=&quot;_blank&quot;&gt;Guide to Encoding Categorical Values in&amp;nbsp;Python&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            Many machine learning algorithms can support categorical values without further manipulation but there are many more algorithms that do not. Therefore, the analyst is faced with the challenge of figuring out how to turn these text attributes into numerical values for further processing. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;datascience&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://blog.untrod.com/2017/02/recommendation-engine-for-trending-products-in-python.md.html&quot; target=&quot;_blank&quot;&gt;A Simple Trending Products Recommendation Engine in Python&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;machine learning&lt;/div&gt;,&lt;/em&gt;
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;recommendation engine&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://mauveweb.co.uk/posts/2017/01/pyweek-23.html&quot; target=&quot;_blank&quot;&gt;Pyweek Game Jam is 19th-26th February&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            The Pyweek rules, in short, are Develop a game, In Python (mostly, at least!), As an individual or with a team, In exactly one week (or less!),  From &quot;scratch&quot; - no personal codebases, only public, documented librarie, On a theme that is selected by vote, announced at the moment the contest starts. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;community&lt;/div&gt;,&lt;/em&gt;
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;game development&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;http://www.pypython.site/2017/01/seaborn-for-python.html&quot; target=&quot;_blank&quot;&gt;Seaborn for Python&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            Seaborn is a wrapper around Matplotlib that makes creating common statistical plots easy. The list of supported plots includes univariate and bivariate distribution plots, regression plots, and a number of methods for plotting categorical variables. The full list of plots Seaborn provides is in their API reference. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;matplotlib&lt;/div&gt;,&lt;/em&gt;
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;statistics&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;https://dev.to/rohanjamin/classifying-tweets-with-amazon-ml&quot; target=&quot;_blank&quot;&gt;Classifying Tweets with Amazon ML&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;aws&lt;/div&gt;,&lt;/em&gt;
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;machine learning&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;https://twitter.com/getpy/status/829241707610923010&quot; target=&quot;_blank&quot;&gt;Python newbie Meme&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;humor&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;https://www.youtube.com/playlist?list=PLzV58Zm8FuBL6OAv1Yu6AwXZrnsFbbR0S&quot; target=&quot;_blank&quot;&gt;A ten-hour codewalk through the Python interpreter source code&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            Python Video Series on CPython Internals. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;https://medium.com/@nhuphan0404/kmlcreate-points-in-google-earth-with-python-ee4f3d27df55#.ee2jmjrwi&quot; target=&quot;_blank&quot;&gt;Create points in Google Earth with Python&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            First we need to import the library to create point in the Google Earth using simplekml module. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;simplekml&lt;/div&gt;,&lt;/em&gt;
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;kml&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;https://medium.com/@galen.ballew/board-games-meet-machine-learning-34026870f8d5#.h0zruyhzg&quot; target=&quot;_blank&quot;&gt;Using scikit-learn to analyze board game data using linear regression&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;scikit-learn&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                                &lt;div class=&quot;subtitle&quot;&gt;
+                                    &lt;a href=&quot;https://medium.com/@mishra.thedeepak/doc2vec-in-a-simple-way-fa80bfe81104#.3ksrfk71i&quot; target=&quot;_blank&quot;&gt;Doc2vec in a simple way&lt;/a&gt;
+                                &lt;/div&gt;
+                                
+                                    &lt;div class=&quot;body-text&quot;&gt;
+                              
+                                        
+                                            Today I am going to demonstrate a simple implementation of nlp and doc2vec. The idea is to train doc2vec model from text document. I had about 20 text files to start with. Although the 20 document corpus seems small but the perk is it takes around 2 minutes to train the model. 
+                                        
+                                    &lt;br /&gt;
+                            
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;NLP&lt;/div&gt;,&lt;/em&gt;
+                                    
+                                        &lt;em&gt;&lt;div class=&quot;body-text&quot;&gt;doc2vec&lt;/div&gt;&lt;/em&gt;
+                                    
+                                &lt;/div&gt;
+                                &lt;br /&gt;
+                            
+                        
+                        &lt;br /&gt;
+                        
+                        
+                        
+                        &lt;div class=&quot;title&quot;&gt;
+                            Projects
+                        &lt;/div&gt;
+                        &lt;div class=&quot;hr&quot;&gt;&lt;/div&gt;
+                        &lt;br /&gt;
+                        
+                            &lt;div class=&quot;subtitle&quot;&gt;
+                                &lt;a href=&quot;https://github.com/csurfer/pyheat&quot; target=&quot;_blank&quot;&gt;pyheat&lt;/a&gt; -
+                                &lt;small&gt;141 Stars, 8
+                                Fork
+                                &lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;body-text&quot;&gt;
+                                
+                            pprofile + matplotlib = Python program profiled as an awesome heatmap! 
+                        &lt;/div&gt;
+                        &lt;br /&gt;
+                    
+                            &lt;div class=&quot;subtitle&quot;&gt;
+                                &lt;a href=&quot;https://github.com/bamos/block&quot; target=&quot;_blank&quot;&gt;block&lt;/a&gt; -
+                                &lt;small&gt;109 Stars, 5
+                                Fork
+                                &lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;body-text&quot;&gt;
+                                
+                            An intelligent block matrix library for numpy, PyTorch, and beyond. 
+                        &lt;/div&gt;
+                        &lt;br /&gt;
+                    
+                            &lt;div class=&quot;subtitle&quot;&gt;
+                                &lt;a href=&quot;https://github.com/alanzchen/rm-protection&quot; target=&quot;_blank&quot;&gt;rm-protection&lt;/a&gt; -
+                                &lt;small&gt;101 Stars, 6
+                                Fork
+                                &lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;body-text&quot;&gt;
+                                
+                            A safe alternative for &quot;rm&quot;. 
+                        &lt;/div&gt;
+                        &lt;br /&gt;
+                    
+                            &lt;div class=&quot;subtitle&quot;&gt;
+                                &lt;a href=&quot;https://github.com/surmenok/DeepSpell&quot; target=&quot;_blank&quot;&gt;DeepSpell&lt;/a&gt; -
+                                &lt;small&gt;8 Stars, 4
+                                Fork
+                                &lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;body-text&quot;&gt;
+                                
+                            Spelling Correction with Deep Learning 
+                        &lt;/div&gt;
+                        &lt;br /&gt;
+                    
+                            &lt;div class=&quot;subtitle&quot;&gt;
+                                &lt;a href=&quot;https://github.com/green-project/green-recorder&quot; target=&quot;_blank&quot;&gt;green-recorder&lt;/a&gt; -
+                                &lt;small&gt;6 Stars, 4
+                                Fork
+                                &lt;/small&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;body-text&quot;&gt;
+                                
+                            A simple yet functional desktop recorder for Linux systems. 
+                        &lt;/div&gt;
+                        &lt;br /&gt;
+                    
+                    
+                        
+                            &lt;img src=&quot;http://www.launchbit.com/taz-pixel/11284-6650-111&quot; /&gt;
+                        
+                            &lt;img src=&quot;http://www.launchbit.com/taz-pixel/11284-6764-111&quot; /&gt;
+                        
+                    
+                    
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;&lt;/table&gt;</description>
+	<pubDate>Fri, 10 Feb 2017 09:10:41 +0000</pubDate>
+</item>
+<item>
+	<title>Glyph Lefkowitz: Make Time For Hope</title>
+	<guid>https://glyph.twistedmatrix.com/2017/02/make-time-for-hope.html</guid>
+	<link>https://glyph.twistedmatrix.com/2017/02/make-time-for-hope.html</link>
+	<description>&lt;blockquote&gt;
+&lt;p&gt;Pandora hastened to replace the lid! but, alas! the whole contents of the jar
+had escaped, one thing only excepted, which lay at the bottom, and that was
+HOPE.  So we see at this day, whatever evils are abroad, hope never entirely
+leaves us; and while we have THAT, no amount of other ills can make us
+completely wretched.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gutenberg.org/cache/epub/4928/pg4928-images.html#id00149&quot;&gt;Bulfinch’s Mythology&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It’s been a &lt;a href=&quot;https://glyph.twistedmatrix.com/2016/11/what-are-we-afraid-of.html&quot;&gt;rough&lt;/a&gt; couple of weeks, and it
+seems likely to &lt;a href=&quot;https://whatthefuckjusthappenedtoday.com&quot;&gt;continue to be so&lt;/a&gt;
+for quite some time.  There are many real and terrible consequences of the
+mistake that America made in November, and ignoring them will not make them go
+away.  We’ll all need to find a way to do our part.&lt;/p&gt;
+&lt;p&gt;It’s not just
+you —
+&lt;a href=&quot;https://www.theatlantic.com/business/archive/2017/02/work-politics/516120/&quot;&gt;it’s &lt;em&gt;legit&lt;/em&gt; hard to focus on work right now&lt;/a&gt;.
+This is especially true if, as many people in my community are, you are trying
+to motivate yourself to work on extracurricular, after-work projects that you
+used to find exciting, and instead find it hard to get out of bed in the
+morning.&lt;/p&gt;
+&lt;p&gt;I have no particular position of authority to advise you what to do about this
+situation, but I need to give a little pep talk to &lt;em&gt;myself&lt;/em&gt; to get out of bed
+in the morning these days, so I figure I’d share my strategy with you.  This is
+as much in the hope that I’ll follow it more closely myself as it is that it
+will be of use to you.&lt;/p&gt;
+&lt;p&gt;With that, here are some ideas.&lt;/p&gt;
+&lt;h3&gt;It’s not over.&lt;/h3&gt;
+&lt;p&gt;The feeling that nothing else is important any more, that everything must now
+be a life-or-death political struggle, is exhausting.  Again, I don’t want to
+minimize the very real problems that are coming or the need to do something
+about them, but, life will go on.  Remind yourself of that.  If you were doing
+something important before, it’s still important.  The rest of the world isn’t
+going away.&lt;/p&gt;
+&lt;h3&gt;Make as much time for self-care as you need.&lt;/h3&gt;
+&lt;p&gt;You’re not going to be of much use to anyone if you’re just a sobbing wreck all
+the time.  Do whatever you can do to take care of yourself and &lt;em&gt;don’t feel
+guilty about it&lt;/em&gt;.  We’ll all do what we can, when we can.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a class=&quot;footnote-ref&quot; href=&quot;http://glyph.twistedmatrix.com/feeds/all.atom.xml#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;You need
+to
+&lt;a href=&quot;http://onbeing.org/blog/put-on-your-own-mask-first-the-safety-of-self-care/&quot;&gt;put on your own oxygen mask first&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Make time, every day, for hope.&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://takingnote.blogs.nytimes.com/2015/03/24/kimmy-schmidts-revolutionary-approach-to-pain/&quot;&gt;“You can stand anything for 10 seconds.  Then you just start on a new 10 seconds.”&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Every day, set aside some time — maybe 10 minutes, maybe an hour, maybe half
+the day, however much you can manage — where you’re going to just &lt;em&gt;pretend
+everything is going to be OK&lt;/em&gt;.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a class=&quot;footnote-ref&quot; href=&quot;http://glyph.twistedmatrix.com/feeds/all.atom.xml#fn:2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Once you’ve managed to securely fasten this self-deception in place, take the
+time to do the things you think are important.  Of course, for my audience,
+“work on your cool open source code” is a safe bet for something you might want
+to do, but don’t make the mistake of always grimly setting your jaw and nose to
+the extracurricular grindstone; that would just be trading one set of
+world-weariness for another.&lt;/p&gt;
+&lt;p&gt;After convincing yourself
+that
+&lt;a href=&quot;https://www.kickstarter.com/projects/kcgreen/this-is-fine-plush-dog&quot;&gt;everything’s fine&lt;/a&gt;,
+spend time with your friends and family, make art, or heck, just enjoy a good
+movie.  Don’t let the flavor of life turn to ash on your tongue.&lt;/p&gt;
+&lt;h3&gt;Good night and good luck.&lt;/h3&gt;
+&lt;p&gt;Thanks for reading.  It’s going to be a long four years&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a class=&quot;footnote-ref&quot; href=&quot;http://glyph.twistedmatrix.com/feeds/all.atom.xml#fn:3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;; I wish you the
+best of luck living your life in the meanwhile.&lt;/p&gt;
+&lt;div class=&quot;footnote&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn:1&quot;&gt;
+&lt;p&gt;I should note that self-care includes &lt;em&gt;just doing your work to
+financially support yourself&lt;/em&gt;.  If you have a job that you don’t feel is
+meaningful but you need the wages to survive, &lt;em&gt;that’s meaningful&lt;/em&gt;.  It’s
+OK.  Let yourself do it.  Do a good job.  Don’t get fired.&amp;#160;&lt;a class=&quot;footnote-backref&quot; href=&quot;http://glyph.twistedmatrix.com/feeds/all.atom.xml#fnref:1&quot; rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn:2&quot;&gt;
+&lt;p&gt;I know that there are people who are in desperate situations who can’t do
+this; if you’re an immigrant
+in
+&lt;a href=&quot;https://www.theguardian.com/us-news/2017/jan/29/customs-border-protection-agents-trump-muslim-country-travel-ban&quot;&gt;illegal&lt;/a&gt; ICE
+or CBP detention, I’m (hopefully obviously) not talking to you.  But,
+luckily, this is not &lt;em&gt;yet&lt;/em&gt; the majority of the population.  Most of us can,
+at least some of the time, afford to ignore the ongoing disaster.&amp;#160;&lt;a class=&quot;footnote-backref&quot; href=&quot;http://glyph.twistedmatrix.com/feeds/all.atom.xml#fnref:2&quot; rev=&quot;footnote&quot; title=&quot;Jump back to footnote 2 in the text&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn:3&quot;&gt;
+&lt;p&gt;Realistically, probably more like 20 months, once the Rs in congress
+realize that he’s completely destroyed their party’s credibility and get
+around to impeaching him for one of his numerous crimes.&amp;#160;&lt;a class=&quot;footnote-backref&quot; href=&quot;http://glyph.twistedmatrix.com/feeds/all.atom.xml#fnref:3&quot; rev=&quot;footnote&quot; title=&quot;Jump back to footnote 3 in the text&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+	<pubDate>Fri, 10 Feb 2017 07:58:00 +0000</pubDate>
+</item>
+<item>
+	<title>PyCon: Financial Aid deadline is February 15! But what about international travel?</title>
+	<guid>http://pycon.blogspot.com/2017/02/financial-aid-deadline-is-february-15.html</guid>
+	<link>http://pycon.blogspot.com/2017/02/financial-aid-deadline-is-february-15.html</link>
+	<description>&lt;p&gt;The deadline for applying to PyCon 2017 for Financial Aid is this coming Wednesday, February 15th! The link to the application is on our main Financial Aid page:&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://us.pycon.org/2017/financial-assistance/&quot;&gt;https://us.pycon.org/2017/financial-assistance/&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Given that international travel to the United States has become a greater risk for many in the international community, PyCon wants to make an extra stipulation this year to try to protect our Financial Aid recipients in case they are turned away upon arrival in the United States. But, first, let’s get clear about the risks and duties of those who are awarded Financial Aid.&lt;/p&gt; &lt;p&gt;For many people, airline tickets and nights at a hotel are never routine expenses. They are frightening blows against a bank account — large, exceptional purchases for special occasions. But what if a person becomes too ill to travel, cannot get a full refund, and the money is simply lost? What if a missed flight adds hundreds of dollars of extra expense that were not in the budget and for which they are unprepared?&lt;/p&gt; &lt;p&gt;While PyCon’s Financial Aid program does strive to make travel possible for a broader audience than could comfortably attend the conference on their own budget, it cannot eliminate the risks of travel. Indeed, its mechanism for delivering awarded funds — a physical check that must be collected at the conference itself — can only succeed for travelers who actually reach PyCon.&lt;/p&gt; &lt;p&gt;So let’s review the risks of traveling to PyCon in the hope of receiving a Financial Aid check, and then learn about the new promise that the conference is making this year:&lt;/p&gt; &lt;ul&gt;&lt;li&gt;Financial Aid is designed to help with travel expenses, not with your visa application fee. Financial Aid applicants have always been responsible for paying their own visa application fee, whether the visa is granted or denied. This remains true for PyCon 2017. So keep in mind that if your visa is denied, the United States will not refund your processing fee, and — as you will not be traveling — PyCon will not be giving you Financial Aid or refund your visa processing fee.&lt;/li&gt;&lt;li&gt;You should apply for your visa, if you decided to attend, right after you receive our response to your Financial Aid application.&lt;/li&gt;&lt;li&gt;As you start the visa application process, go ahead and register for the conference. You can do so without risk: we always fully refund a registration fee when a visa application is denied. We even waive our usual $25 fee for processing a cancellation — you receive back the full registration fee that you paid!&lt;/li&gt;&lt;li&gt;However, we advise you to delay any non-refundable travel purchases until after you have been granted a visa. Many applicants wait until they have their visa in hand before they even book a hotel room, and almost everyone waits until the visa arrives before purchasing airfare.&lt;/li&gt;&lt;li&gt;Beyond those guidelines, we have traditionally provided only the promise that each Financial Aid recipient, if they make it to PyCon, will receive their check. This obviously burdens each applicant with a risk: that if their travel plans go awry and they cannot reach Portland, that they will receive no Financial Aid. They will have to try cancelling their hotel room in time to receive a refund, and ask their airline if any kind of a refund is possible.&lt;/li&gt;&lt;li&gt;In previous years, PyCon assumed this risk to be a reasonable one. But we want to make a new stipulation here in 2017. First, &lt;strong&gt;if despite holding a visa you are denied entry upon arrival to the United States, then after you pursue and receive whatever refund your airline might be able to offer, PyCon wants to send you enough of your Financial Aid grant to cover the rest of the cost of your airfare (or the whole grant, if the airfare cost more).&lt;/strong&gt; You will need to document that you indeed arrived in the United States and were denied entry.&lt;/li&gt;&lt;li&gt;Second: if despite holding a visa you are denied entry upon arrival to the United States, but used our registration page to book a room in a conference hotel, &lt;strong&gt;our staff will personally work with the hotel to make sure you do not receive a cancellation fee.&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Third: if despite holding a visa you are denied entry upon arrival to the United States, &lt;strong&gt;PyCon will fully refund your registration fee.&lt;/strong&gt; While this is more serious for our conference budget — at such a late date, we will be unlikely to be able to register someone else in your place — we have decided to put the financial safety of our Financial Aid recipients from overseas first.&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;We hope that these extra guarantees beyond the normal terms of our Financial Aid program will help applicants plan more confidently and will continue to make PyCon 2017 an option for as wide a slice of the worldwide Python community as possible.&lt;/p&gt;</description>
+	<pubDate>Thu, 09 Feb 2017 23:39:46 +0000</pubDate>
+</item>
+<item>
+	<title>Enthought: New Year, New Enthought Products!</title>
+	<guid>http://blog.enthought.com/canopy/new-year-new-enthought-python-products/</guid>
+	<link>http://blog.enthought.com/canopy/new-year-new-enthought-python-products/</link>
+	<description>&lt;p&gt;&lt;span&gt;We&amp;#8217;ve had a number of major product development efforts underway over the last year, and we&amp;#8217;re pleased to share a lot of new announcements for 2017:&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;A New Chapter for the Enthought Python Distribution (EPD):&lt;br /&gt;
+Python 3 and Intel MKL 2017&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span&gt;In 2004, Enthought released the first &amp;#8220;Python: Enthought Edition,&amp;#8221; a Python package distribution tailored for a scientific and analytic audience. In 2008 this became the Enthought Python Distribution (EPD), a self-contained installer with the &lt;code&gt;&quot;enpkg&quot;&lt;/code&gt; command-line tool to update and manage packages. Since then, over a million users have benefited from Enthought&amp;#8217;s tested, pre-compiled set of Python packages, allowing them to focus on their science by eliminating the hassle of setting up tools.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.enthought.com/products/epd/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;alignright wp-image-3274733&quot; src=&quot;http://blog.enthought.com/wp-content/uploads/EPD-Logo-New-441x441.png&quot; alt=&quot;Enthought Python Distribution logo&quot; width=&quot;165&quot; height=&quot;165&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Fast forward to 2017, and we now offer &lt;a href=&quot;https://www.enthought.com/products/canopy/package-index/&quot; target=&quot;_blank&quot;&gt;over 450 Python packages&lt;/a&gt; and a new era for the &lt;/span&gt;&lt;span&gt;&lt;a href=&quot;https://www.enthought.com/products/epd/&quot; target=&quot;_blank&quot;&gt;Enthought Python Distribution&lt;/a&gt;; &lt;/span&gt;&lt;span&gt;access to all of the packages in the new EPD is completely free to all users and includes packages and runtimes for both Python 2 and Python 3 with some exciting new additions. Our &lt;/span&gt;&lt;span&gt;ever-growing list of packages&lt;/span&gt;&lt;span&gt; includes, for example, the &lt;/span&gt;&lt;span&gt;&lt;a href=&quot;https://software.intel.com/en-us/intel-mkl&quot; target=&quot;_blank&quot;&gt;2017 release of the MKL&lt;/a&gt; (Math Kernel Library)&lt;/span&gt;&lt;span&gt;, the fruit of an ongoing collaboration with Intel.&lt;br /&gt;
+&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;The New Enthought Deployment Server:&lt;br /&gt;
+Secure, Onsite Access to EPD and Private Packages&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img class=&quot;alignright size-full wp-image-3274687&quot; src=&quot;http://blog.enthought.com/wp-content/uploads/Enthought-Deployment-Server-Centralized-Management-Illustration-v2.png&quot; alt=&quot;enthought-deployment-server-centralized-management-illustration-v2&quot; width=&quot;1626&quot; height=&quot;377&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;For those who are interested in having a private copy of the Enthought Python Distribution behind their firewall, as well as the ability to upload and manage internal private packages alongside it, we now offer the &lt;/span&gt;&lt;a href=&quot;https://www.enthought.com/products/enthought-deployment-server/&quot; target=&quot;_blank&quot;&gt;&lt;span&gt;Enthought Deployment Server&lt;/span&gt;&lt;/a&gt;&lt;span&gt;, an onsite version of the server we have been using for years to serve millions of Python packages to our users.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;a href=&quot;https://www.enthought.com/products/enthought-deployment-server/&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;alignright wp-image-3274688&quot; src=&quot;http://blog.enthought.com/wp-content/uploads/Enthought-Deployment-Server-Logo.png&quot; alt=&quot;enthought-deployment-server-logo&quot; width=&quot;168&quot; height=&quot;175&quot; /&gt;&lt;/a&gt;With a local Enthought Deployment Server, your private copy will periodically synchronize with our master repository, on a schedule of your choosing, to keep you up to date with the latest releases. You can also set up private package repositories and control access to them using your existing LDAP or Active Directory service in a way that suits your organization.  We can even give you access to the packages (and their historical versions) inside of air-gapped networks! &lt;/span&gt;&lt;a href=&quot;https://www.enthought.com/products/enthought-deployment-server/#watch-webinar&quot; target=&quot;_blank&quot;&gt;&lt;span&gt;See our webinar introducing the Enthought Deployment Server&lt;/span&gt;&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;Command Line Access to the New EPD and Flat Environments&lt;br /&gt;
+via the Enthought Deployment Manager (EDM)&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span&gt;In 2013, we expanded the original EPD to introduce &lt;a href=&quot;https://www.enthought.com/products/canopy/&quot; target=&quot;_blank&quot;&gt;Enthought Canopy&lt;/a&gt;, coupling an integrated analysis environment with &lt;/span&gt;&lt;a href=&quot;https://www.enthought.com/products/canopy/features/&quot;&gt;&lt;span&gt;additional features&lt;/span&gt;&lt;/a&gt;&lt;span&gt; such as a graphical package manager, documentation browser, and other user-friendly tools together with the Enthought Python Distribution to provide even more features to help &amp;#8220;make science and analysis easy.&amp;#8221;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;With its MATLAB-like experience, Canopy has enabled countless engineers, scientists and analysts to perform sophisticated analysis, build models, and create cutting-edge data science algorithms. The all-in-one analysis platform for Python has also been widely adopted in organizations who want to provide a single, unified platform that can be used by everyone from data analysts to software engineers.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;But we heard from a number of you that you also still wanted the capability to have flat, standalone environments not coupled to any editor or graphical tool. And we listened!  &lt;/span&gt;&lt;span&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;a href=&quot;https://www.enthought.com/products/edm/&quot;&gt;&lt;img class=&quot;alignright wp-image-3274686&quot; src=&quot;http://blog.enthought.com/wp-content/uploads/Enthought-Deployment-Manager-CLI-Screenshot2.jpg&quot; alt=&quot;enthought-deployment-manager-cli-screenshot2&quot; width=&quot;370&quot; height=&quot;248&quot; /&gt;&lt;/a&gt;So last year, we finished building out our next-generation command-line tool that makes producing flat, standalone Python environments super easy.  We call it the &lt;a href=&quot;https://www.enthought.com/products/edm/&quot;&gt;Enthought Deployment Manager (or EDM &lt;/a&gt;for short), because it&amp;#8217;s a tool to quickly deploy one or multiple Python environments with the full control over package versions and runtime environments.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;EDM is also a valuable tool for use cases such as command line deployment on local machines or servers, &lt;span&gt;web application deployment on AWS using Ansible and Amazon CloudFormation&lt;/span&gt;, rapid environment setup on continuous integration systems such as Travis-CI, Appveyor, or Jenkins/TeamCity, and more.&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Finally, a new state-of-the-art package dependency solver included in the tool guarantees the consistency of your environment, and if your workflow requires switching between different environments, its sandboxed architecture makes it a snap to switch contexts.  All of this has also been designed with a focus on providing robust backward compatibility to our customers over time.  &lt;/span&gt;&lt;a href=&quot;https://www.enthought.com/products/edm/&quot;&gt;&lt;span&gt;Find out more about EDM here&lt;/span&gt;&lt;/a&gt;&lt;span&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;Enthought Canopy 2.0:&lt;br /&gt;
+Python 3 packages and New EDM Back End Infrastructure&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span&gt;&lt;a href=&quot;https://www.enthought.com/products/canopy/&quot;&gt;&lt;img class=&quot;alignright wp-image-129997&quot; src=&quot;http://blog.enthought.com/wp-content/uploads/Final-version-canopy-logo-1.png&quot; alt=&quot;Enthought Canopy Logo&quot; width=&quot;207&quot; height=&quot;164&quot; /&gt;&lt;/a&gt;The new Enthought Python Distribution (EPD) and Enthought Deployment Manager (EDM) will also provide additional benefits for &lt;a href=&quot;https://www.enthought.com/products/canopy/&quot;&gt;Canopy&lt;/a&gt;.  Canopy 2.0 is just around the corner, which will be the first version to include Python 3 packages from EPD. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;In addition, we have re-worked Canopy&amp;#8217;s graphical package manager to use EDM as its back end, to take advantage of both the consistency and stability of the environments EDM provides, as well as its new package dependency solver.  By itself, this will provide a big boost in stability for users &lt;em&gt;(ever found yourself wrapped up in a tangle of inconsistent package versions?)&lt;/em&gt;.  Alongside the conversion of Canopy&amp;#8217;s back end infrastructure to EDM, we have also included a substantial number of stability improvements and bug fixes. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Canopy&amp;#8217;s Graphical Debugger adds external IPython kernel debugging support&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;On the integrated analysis environment side of Canopy, the &lt;a href=&quot;https://www.enthought.com/products/canopy/canopy-python-debugger/&quot;&gt;graphical debugger and variable browser&lt;/a&gt;, first introduced in 2015, has gotten some nifty new features, including the ability to connect to and debug an external IPython kernel, in addition to a number of stability improvements.  &lt;/span&gt;&lt;em&gt;&lt;span&gt;(Weren&amp;#8217;t aware you could connect to an external process?  Look for the context menu in the IPython console, use it to connect to the IPython kernel running, say, a Jupyter notebook, and debug away!)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Canopy Data Import Tool adds CSV exports and input file templates&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;a href=&quot;https://www.enthought.com/products/canopy/canopy-data-import-tool/&quot;&gt;&lt;img class=&quot;alignright wp-image-3256877&quot; src=&quot;http://blog.enthought.com/wp-content/uploads/Canopy-Data-Import-Tool-Icon-Logo-500x402-05.03.png&quot; alt=&quot;Enthought Canopy Data Import Tool&quot; width=&quot;234&quot; height=&quot;286&quot; /&gt;&lt;/a&gt;Also, we&amp;#8217;ve continued to add new features to the Canopy &lt;a href=&quot;https://www.enthought.com/products/canopy/canopy-data-import-tool/&quot;&gt;Data Import Tool&lt;/a&gt; since its initial release in May of 2016. The Data Import Tool allows users to quickly and easily import CSVs and other structured text files into Pandas DataFrames through a graphical interface, manipulate the data, and create reusable Python scripts to speed future data wrangling.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;The latest version of the tool (v. 1.0.9, shipping with Canopy 2.0) has some nice new features like CSV exporting, input file templates, and more. &lt;/span&gt;&lt;span&gt;See &lt;a href=&quot;http://blog.enthought.com/?s=%22data+import+tool%22&quot; target=&quot;_blank&quot;&gt;Enthought&amp;#8217;s blog&lt;/a&gt; for some great examples of how the Data Import Tool speeds data loading, wrangling and analysis.&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;What to Look Forward to in 2017&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span&gt;So where are we headed in 2017?  We have put a lot of effort into building a strong foundation with our core suite of products, and now we&amp;#8217;re focused on continuing to deliver new value (our enterprise users in particular have a number of new features to look forward to).  First up, for example, you can look for expanded capabilities around Python environments, making it easy to manage multiple environments, or even standardize and distribute them in your organization.  With the tremendous advancements in our core products that took place in 2016, there are a lot of follow-on features we can deliver. Stay tuned for updates!&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Have a specific feature you&amp;#8217;d like to see in one of Enthought&amp;#8217;s products? E-mail our product team at canopy.support@enthought.com and tell us about it!&lt;/p&gt;
+&lt;p&gt;The post &lt;a rel=&quot;nofollow&quot; href=&quot;http://blog.enthought.com/canopy/new-year-new-enthought-python-products/&quot;&gt;New Year, New Enthought Products!&lt;/a&gt; appeared first on &lt;a rel=&quot;nofollow&quot; href=&quot;http://blog.enthought.com&quot;&gt;Enthought Blog&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Thu, 09 Feb 2017 21:49:24 +0000</pubDate>
+</item>
+<item>
+	<title>Dataquest: 1 tip for effective data visualization in Python</title>
+	<guid>https://www.dataquest.io/blog/how-to-communicate-with-data/</guid>
+	<link>https://www.dataquest.io/blog/how-to-communicate-with-data/</link>
+	<description>&lt;p&gt;Yes, you read correctly – this post will only give you 1 tip. I know most posts like this have 5 or more tips. I once saw a post with &lt;em&gt;15&lt;/em&gt; tips, but I may have been daydreaming at the time. You’re probably wondering what makes this 1 tip so special. “Vik”, you may ask, “I’ve been reading posts that have 7 tips all day. Why should I spend the time and effort to read a whole post for only 1 tip?”&lt;/p&gt; &lt;p&gt;I can only answer that data visualization is about quality, not quantity. Like me, you probably spent hours learning about all the various charts that are out there – pie charts, line charts, bar charts, horizontal bar charts, and millions of others. Like me, you thought you understood data visualization. But we were wrong. Because &lt;strong&gt;data visualization isn’t about making different types of fancy charts. It’s about understanding your audience and helping them achieve their goals.&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Oh, this is embarrassing – I just gave away the tip. Well, if you keep reading, I promise that you’ll learn all about making effective data visualization, and why this one tip is useful. By the end, you’ll be able to make...&lt;/p&gt;</description>
+	<pubDate>Thu, 09 Feb 2017 20:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Continuum Analytics News: The Dominion: An Open Data Science Film</title>
+	<guid>https://www.continuum.io/blog/company-blog/dominion-open-data-science-film</guid>
+	<link>https://www.continuum.io/blog/company-blog/dominion-open-data-science-film</link>
+	<description>&lt;div class=&quot;field field-name-field-article-category field-type-taxonomy-term-reference field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://www.continuum.io/article-categories/company-blog&quot;&gt;Company Blog&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;
+      &lt;span class=&quot;date-display-single&quot;&gt;Thursday, February 9, 2017&lt;/span&gt;  &lt;/div&gt;
+&lt;div class=&quot;field field-name-field-authors field-type-entityreference field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;columns large-3&quot;&gt;
+    &lt;div class=&quot;profile-photo&quot;&gt;
+      &lt;div class=&quot;field field-name-field-profile-photo field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://www.continuum.io/people/michele-chambers&quot;&gt;&lt;img src=&quot;https://www.continuum.io/sites/default/files/styles/profile/public/michele_chambers.jpg?itok=hR0tFwlO&quot; width=&quot;180&quot; height=&quot;180&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;div class=&quot;columns large-9&quot;&gt;
+    &lt;a href=&quot;https://www.continuum.io/people/michele-chambers&quot;&gt;Michele Chambers&lt;/a&gt;
+
+          &lt;div class=&quot;field field-name-field-profile-title field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;EVP Anaconda Business Unit &amp;amp; CMO&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;              &lt;div class=&quot;field field-name-field-profile-company field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Continuum Analytics&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;      &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The inaugural AndacondaCON event was full of surprises. Personalized legos, delicious Texan BBQ, Anaconda “swag” and a preview of what might be the most dramatic, life-altering data science movie of all time: &lt;em&gt;The Dominion&lt;/em&gt;.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Dominion&lt;/em&gt; tells the story of a world similar to ours. One full of possibilities but is being threatened by old machines and bad code. Leo, the main character joins forces with Matrix-like heroes to save businesses from alien-infected software. Leo and his team take it upon themselves to fight the Dominion's agents —Macros—who want to stop the world from open source innovation.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;In an effort to defeat the Macros, they board the rebel fleet flagship, &lt;em&gt;The Anaconda,&lt;/em&gt; loaded with data science packages and payload to help the team drop into any environment to free people from the Macros’ hindering code.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Leo and his team believe that the world is moving to Open Data Science, and that distributed cloud data is going to liberate humanity—all they have to do is work together to make it happen.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;The question is—do you? Are you ready for the future? Board &lt;em&gt;The Anaconda&lt;/em&gt; to begin the journey with Leo, his team and us. The time is now.&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Couldn’t make it to &lt;a href=&quot;https://anacondacon17.io/&quot;&gt;AnacondaCON&lt;/a&gt;? There’s always next year, and watch the full trailer below.&amp;nbsp;&lt;/p&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Thu, 09 Feb 2017 15:53:17 +0000</pubDate>
+</item>
+<item>
+	<title>PyCharm: PyCharm 2017.1 EAP 6 (build 171.3019.3)</title>
+	<guid>http://feedproxy.google.com/~r/Pycharm/~3/btWQnuziTow/</guid>
+	<link>http://feedproxy.google.com/~r/Pycharm/~3/btWQnuziTow/</link>
+	<description>&lt;p&gt;The sixth Early Access Program release of PyCharm 2017.1 is out now! &lt;a href=&quot;https://jetbrains.com/pycharm/nextversion&quot;&gt;Get it now from our EAP website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This week we&amp;#8217;ve added these features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ctrl+Click on links to open them in the Terminal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And we&amp;#8217;ve resolved the following bugs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Execute selection/line in console&lt;/li&gt;
+&lt;li&gt;input() in debug console&lt;/li&gt;
+&lt;li&gt;Debugging Docker projects on Mac&lt;/li&gt;
+&lt;li&gt;SSH remote interpreter errors&lt;/li&gt;
+&lt;li&gt;Pyramid project creation with Chameleon templates&lt;/li&gt;
+&lt;li&gt;Many Angular2 fixes&lt;/li&gt;
+&lt;li&gt;Various other JavaScript formatting and inspections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Any improvements marked ‘Pro only’ are only available in PyCharm Professional Edition. You can use the EAP version of PyCharm Professional Edition for free for 30 days.&lt;/p&gt;
+&lt;p&gt;We’d like to encourage you to &lt;a href=&quot;https://jetbrains.com/pycharm/nextversion&quot;&gt;try out this new EAP version.&lt;/a&gt; To keep up-to-date with our EAP releases set your update channel to Early Access Program: Settings | Appearance &amp;amp; Behavior | System Settings | Updates, Automatically check updates for “Early Access Program”&lt;/p&gt;
+&lt;p&gt;We do our best to find all bugs before we release, but in these preview builds there might still be some bugs in the product. If you find one, please &lt;a href=&quot;https://youtrack.jetbrains.com/issues/PY&quot;&gt;let us know on YouTrack&lt;/a&gt;, or contact us on Twitter &lt;a href=&quot;https://twitter.com/pycharm&quot;&gt;@PyCharm&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;-PyCharm Team&lt;/em&gt;&lt;br /&gt;
+The Drive to Develop&lt;/p&gt;
+&lt;img src=&quot;http://feeds.feedburner.com/~r/Pycharm/~4/btWQnuziTow&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot; /&gt;</description>
+	<pubDate>Thu, 09 Feb 2017 15:44:23 +0000</pubDate>
+</item>
+<item>
+	<title>DataCamp: DataChats: An Interview with Dhavide Aruliah</title>
+	<guid>http://www.datacamp.com/community/blog/datachats-an-interview-with-dhavide-aruliah</guid>
+	<link>http://www.datacamp.com/community/blog/datachats-an-interview-with-dhavide-aruliah</link>
+	<description>&lt;p&gt;Hi everyone! We've just released a new episode of our DataChats video series (episode 9)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;In this episode, we interview Dhavide Aruliah. Dhavide is Director of Training at Continuum Analytics, the creator and driving force behind Anaconda—the leading Open Data Science platform powered by Python. Dhavide was previously an Associate Professor at the University of Ontario Institute of Technology (UOIT). He served as Program Director for various undergraduate &amp;amp; postgraduate programs at UOIT. His research interests include computational inverse problems, numerical linear algebra, &amp;amp; high-performance computing. The materials for this course were produced by the Continuum training team. Together with Hugo, Dhavide goes over the process of designing the &lt;a href=&quot;http://bit.ly/2kSsPAR&quot;&gt;pandas Foundation&lt;/a&gt; course, his work at Continuum and the Anaconda ecosystem, his path to Python and more.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope that you enjoy watching this series and make sure not to miss any of our upcoming episodes by subscribing to &lt;a href=&quot;https://www.youtube.com/channel/UC79Gv3mYp6zKiSwYemEik9A&quot;&gt;DataCamp's YouTube channel&lt;/a&gt;!&lt;/p&gt;</description>
+	<pubDate>Thu, 09 Feb 2017 14:12:37 +0000</pubDate>
+</item>
+<item>
+	<title>Mike Driscoll: New in Python: Formatted string literals</title>
+	<guid>http://www.blog.pythonlibrary.org/2017/02/08/new-in-python-formatted-string-literals/</guid>
+	<link>http://www.blog.pythonlibrary.org/2017/02/08/new-in-python-formatted-string-literals/</link>
+	<description>&lt;div class=&quot;pf-content&quot;&gt;&lt;p&gt;Python 3.6 added yet another way to do string substitution that they are calling &amp;#8220;Formatted String Literals&amp;#8221;. You can read all about the concept in &lt;a href=&quot;https://www.python.org/dev/peps/pep-0498&quot; target=&quot;_blank&quot;&gt;PEP 498&lt;/a&gt;. I take a bit of umbrage here in that the Zen of Python states that &lt;em&gt;There should be one&amp;#8211; and preferable only one &amp;#8211;obvious way to do it&lt;/em&gt;. Now Python has three ways. Let&amp;#8217;s take a walk down memory lane before we talk about the latest way to play with strings.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Ye Olde String Substitution&lt;/h3&gt;
+&lt;p&gt;
+&lt;p&gt;When Python first started, they followed C++ in the way they did string substitution by using&lt;strong&gt; %s, %i&lt;/strong&gt; and the like. Here are a couple of examples:&lt;/p&gt;
+&lt;pre class=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; The &lt;span&gt;%&lt;/span&gt;s fox jumps the &lt;span&gt;%&lt;/span&gt;s&lt;span&gt;' % ('&lt;/span&gt;quick&lt;span&gt;', '&lt;/span&gt;crevice&lt;span&gt;')
+'&lt;/span&gt;The quick fox jumps the crevice&lt;span&gt;'
+&amp;gt;&amp;gt;&amp;gt; foo = '&lt;/span&gt;The total of your purchase &lt;span&gt;is&lt;/span&gt; &lt;span&gt;%&lt;/span&gt;.2f&lt;span&gt;' % 10
+&amp;gt;&amp;gt;&amp;gt; foo
+'&lt;/span&gt;The total of your purchase &lt;span&gt;is&lt;/span&gt; &lt;span&gt;10.00&lt;/span&gt;&lt;span&gt;'&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span id=&quot;more-6104&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The second example above demonstrates how to format a number into a float with a precision set to 2 decimal places. This method of string substitution also supports keyword arguments:&lt;/p&gt;
+&lt;pre class=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span&gt;'Hi, my name is %(name)s'&lt;/span&gt; &lt;span&gt;%&lt;/span&gt; &lt;span&gt;&amp;#123;&lt;/span&gt;&lt;span&gt;'name'&lt;/span&gt;: &lt;span&gt;'Mike'&lt;/span&gt;&lt;span&gt;&amp;#125;&lt;/span&gt;
+Out&lt;span&gt;&amp;#91;&lt;/span&gt;&lt;span&gt;21&lt;/span&gt;&lt;span&gt;&amp;#93;&lt;/span&gt;: &lt;span&gt;'Hi, my name is Mike'&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;The syntax is a little odd and I always have to look it up to get it to work correctly.&lt;/p&gt;
+&lt;p&gt;While these methods of string substitution are still supported, a new method was invented that was supposed to be clearer and more functional. Let&amp;#8217;s see how that looks:&lt;/p&gt;
+&lt;pre class=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; bar = &lt;span&gt;'You need to pay {}'&lt;/span&gt;.&lt;span&gt;format&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;10.00&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; bar
+&lt;span&gt;'You need to pay 10.0'&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; swede = &lt;span&gt;'The Swedish chef is know for saying {0}, {1}, {2}'&lt;/span&gt;.&lt;span&gt;format&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;'bork'&lt;/span&gt;, &lt;span&gt;'cork'&lt;/span&gt;, &lt;span&gt;'spork'&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; swede
+&lt;span&gt;'The Swedish chef is know for saying bork, cork, spork'&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;I thought this was a pretty clever new addition. However there was an additional enhancement in that you could actually use keyword arguments to specify what goes where in a string substitution:&lt;/p&gt;
+&lt;pre class=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; swede = &lt;span&gt;'The Swedish chef is know for saying {something}, {something}, {something}'&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; swede.&lt;span&gt;format&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;something=&lt;span&gt;'bork'&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+&lt;span&gt;'The Swedish chef is know for saying bork, bork, bork'&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span&gt;test&lt;/span&gt; = &lt;span&gt;'This is a {word} of your {something}'&lt;/span&gt;.&lt;span&gt;format&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;word=&lt;span&gt;'Test'&lt;/span&gt;, something=&lt;span&gt;'reflexes'&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span&gt;test&lt;/span&gt;
+&lt;span&gt;'This is a Test of your reflexes'&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;This is pretty cool and actually quite useful. You will see some programmers that will argue over which method is to be preferred. I have seen some even claim that the original method is actually faster than the newer one if you are doing a lot of string substitutions. Regardless, this gives you a brief glimpse of the old way of doing things. Let&amp;#8217;s see what&amp;#8217;s new!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Using Formatted String Literals&lt;/h3&gt;
+&lt;p&gt;&gt;p&gt;&lt;/p&gt;
+&lt;p&gt;Starting in Python 3.6, we get Formatted String Literals or f-string. The syntax for a formatted string literal is a bit different than what we&amp;#8217;ve seen previously:&lt;/p&gt;
+&lt;pre class=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; name = &lt;span&gt;'Mike'&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; f&lt;span&gt;'My name is {name}'&lt;/span&gt;
+&lt;span&gt;'My name is Mike'&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;Let&amp;#8217;s break this down a bit. The first thing we do is define a variable that we want to insert into a string. Next we want to tell Python that we want to create a formatted string literal. To do this, we prepend our string with the letter &amp;#8220;f&amp;#8221;. That means the string will be formatted. The final piece is quite similar to our last example from the previous section in that we just need to insert our variable name into the string with a pair of curly braces around it. Then Python does some magic and we get a new string printed out. This is actually quite similar to some of the Python templating languages, such as mako.&lt;/p&gt;
+&lt;p&gt;The f-string also supports certain types of conversions, such as str() via &amp;#8216;!s&amp;#8217; and repr() via &amp;#8216;!r&amp;#8217;. Here&amp;#8217;s an updated example:&lt;/p&gt;
+&lt;pre class=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; f&lt;span&gt;'My name is {name!r}'&lt;/span&gt;
+Out&lt;span&gt;&amp;#91;&lt;/span&gt;&lt;span&gt;11&lt;/span&gt;&lt;span&gt;&amp;#93;&lt;/span&gt;: &lt;span&gt;&amp;quot;My name is 'Mike'&amp;quot;&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;You will note that the change in the output is pretty subtle in that all that was added is some single quotes around the variable that was inserted. Let&amp;#8217;s take a look at something a bit more complicated, namely floating point numbers!&lt;/p&gt;
+&lt;pre class=&quot;python&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span&gt;import&lt;/span&gt; &lt;span&gt;decimal&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; gas_total = &lt;span&gt;decimal&lt;/span&gt;.&lt;span&gt;Decimal&lt;/span&gt;&lt;span&gt;&amp;#40;&lt;/span&gt;&lt;span&gt;'20.345'&lt;/span&gt;&lt;span&gt;&amp;#41;&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; width = &lt;span&gt;10&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; precision = &lt;span&gt;4&lt;/span&gt;
+&lt;span&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; f&lt;span&gt;'Your gas total is: {gas_total:{width}.{precision}}'&lt;/span&gt;
+&lt;span&gt;'Your gas total is:      20.34'&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;Here we import Python&amp;#8217;s decimal module and create an instance of that represents a gas total. Then we set up the width of the string to be 10 characters and the precision to be 4. Finally we tell the f-string to format it for us. As you can see, the inserted text has some padding on the front end to make it 10 characters wide and the precision basically set it to 4 which truncated the 5 instead of rounding up.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Wrapping Up&lt;/h3&gt;
+&lt;p&gt;
+&lt;p&gt;The new Formatted String Literal or f-string doesn&amp;#8217;t really add anything new to formatting strings. However it is &lt;a href=&quot;https://www.python.org/dev/peps/pep-0498/#id24&quot; target=&quot;_blank&quot;&gt;claimed&lt;/a&gt; to be more flexible and less error-prone than the previous methods. I highly recommend reading the documentation and PEP 498 to help you get up to speed on this new feature so you can determine if this is the way you will be doing string substitution in the future.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Related Reading&lt;/h3&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;What&amp;#8217;s new in &lt;a href=&quot;https://docs.python.org/3.6/whatsnew/3.6.html#pep-498-formatted-string-literals&quot; target=&quot;_blank&quot;&gt;Python 3.6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PEP 498 &amp;#8212; &lt;a href=&quot;https://www.python.org/dev/peps/pep-0498/&quot; target=&quot;_blank&quot;&gt;Literal String Interpolation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New in Python: &lt;a href=&quot;http://www.blog.pythonlibrary.org/2017/01/12/new-in-python-syntax-for-variable-annotations/&quot; target=&quot;_blank&quot;&gt;Syntax for variable annotations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New in Python: &lt;a href=&quot;http://www.blog.pythonlibrary.org/2017/01/11/new-in-python-underscores-in-numeric-literals/&quot; target=&quot;_blank&quot;&gt;Underscores in Numeric Literals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/div&gt;</description>
+	<pubDate>Wed, 08 Feb 2017 18:15:22 +0000</pubDate>
+</item>
+<item>
+	<title>Amjith Ramanujam: Maintainer Stories</title>
+	<guid>http://blog.amjith.com/maintainer-stories</guid>
+	<link>http://blog.amjith.com/maintainer-stories</link>
+	<description>&lt;div class=&quot;posthaven-post-body&quot;&gt;&lt;p&gt;Github produced a video series called &quot;&lt;a href=&quot;https://github.com/open-source/stories&quot; target=&quot;_blank&quot;&gt;Maintainer Stories&lt;/a&gt;&quot;. One of the videos is about my experiences as a maintainer of &lt;a href=&quot;http://pgcli.com&quot; target=&quot;_blank&quot;&gt;pgcli&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</description>
+	<pubDate>Wed, 08 Feb 2017 17:25:35 +0000</pubDate>
+</item>
+<item>
+	<title>Mike Driscoll: Pyowa Meeting (Feb 2017)</title>
+	<guid>http://www.blog.pythonlibrary.org/2017/02/08/pyowa-meeting-feb-2017/</guid>
+	<link>http://www.blog.pythonlibrary.org/2017/02/08/pyowa-meeting-feb-2017/</link>
+	<description>&lt;div class=&quot;pf-content&quot;&gt;&lt;p&gt;The local Python users group, &lt;a href=&quot;http://www.pyowa.org/&quot; target=&quot;_blank&quot;&gt;Pyowa&lt;/a&gt;, was restarted last night after a year and a half hibernation. I hadn&amp;#8217;t been to one of their meetings in a few years, but I had decided at the end of 2016 to get it going again. Once the ball was rolling, we got multiple offers of sponsorships for the meeting and ended up going with Pillar Technology for our first meeting of 2017. They call their space &lt;a href=&quot;http://www.desmoinesregister.com/story/tech/2016/04/08/des-moines-newest-tech-space-forge-opens/82722010/&quot; target=&quot;_blank&quot;&gt;The Forge&lt;/a&gt; and they provided pizza and refreshments. They are located in downtown Des Moines.&lt;/p&gt;
+&lt;p&gt;We had around 23 or so people show up including the staff from Pillar. Our speaker was Jesse Horne from Pioneer and he talked about &lt;a href=&quot;https://github.com/awslabs/chalice&quot; target=&quot;_blank&quot;&gt;Chalice&lt;/a&gt;, a Python Serverless Microframework for AWS (Amazon Web Services). Chalice is kind of a lightweight Flask. Jesse ended up writing a very basic book database web application. While there were some technical issues, the crowd was very supportive and helpful and I thought that the meeting went quite well. There was even a robot wandering around that was remote controlled by one of the employees of Pillar. &lt;/p&gt;
+&lt;p&gt;The next meeting is currently scheduled for March 7th @ Pioneer. Keep an eye on &lt;a href=&quot;http://www.pyowa.org/&quot; target=&quot;_blank&quot;&gt;Pyowa&amp;#8217;s website&lt;/a&gt; for an update to get the latest information.&lt;/p&gt;
+&lt;/div&gt;</description>
+	<pubDate>Wed, 08 Feb 2017 14:42:53 +0000</pubDate>
+</item>
+
+</channel>
+</rss>

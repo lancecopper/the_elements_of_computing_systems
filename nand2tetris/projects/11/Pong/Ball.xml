@@ -1,0 +1,2959 @@
+<class>
+  <keyword> class </keyword>
+  <identifier>
+    <kind> class </kind>
+    <inTable> False </inTable>
+    <varName> Ball </varName>
+    <condition> defined </condition>
+  </identifier>
+  <symbol> { </symbol>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> int </keyword>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> x </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> , </symbol>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> y </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> int </keyword>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> lengthx </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> , </symbol>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> lengthy </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> int </keyword>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> d </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> , </symbol>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> straightD </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> , </symbol>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> diagonalD </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> boolean </keyword>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> invert </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> , </symbol>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> positivex </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> , </symbol>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> positivey </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> int </keyword>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> leftWall </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> , </symbol>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> rightWall </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> , </symbol>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> topWall </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> , </symbol>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> bottomWall </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> int </keyword>
+    <identifier>
+      <kind> field </kind>
+      <inTable> True </inTable>
+      <varName> wall </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <subroutineDec>
+    <keyword> constructor </keyword>
+    <identifier>
+      <kind> class </kind>
+      <inTable> False </inTable>
+      <varName> Ball </varName>
+      <condition> defined </condition>
+    </identifier>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> new </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+      <keyword> int </keyword>
+      <identifier>
+        <kind> argument </kind>
+        <inTable> True </inTable>
+        <varName> Ax </varName>
+        <condition> defined </condition>
+      </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier>
+        <kind> argument </kind>
+        <inTable> True </inTable>
+        <varName> Ay </varName>
+        <condition> defined </condition>
+      </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier>
+        <kind> argument </kind>
+        <inTable> True </inTable>
+        <varName> AleftWall </varName>
+        <condition> defined </condition>
+      </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier>
+        <kind> argument </kind>
+        <inTable> True </inTable>
+        <varName> ArightWall </varName>
+        <condition> defined </condition>
+      </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier>
+        <kind> argument </kind>
+        <inTable> True </inTable>
+        <varName> AtopWall </varName>
+        <condition> defined </condition>
+      </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier>
+        <kind> argument </kind>
+        <inTable> True </inTable>
+        <varName> AbottomWall </varName>
+        <condition> defined </condition>
+      </identifier>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> x </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> argument </kind>
+                <inTable> True </inTable>
+                <varName> Ax </varName>
+                <condition> defined </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> y </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> argument </kind>
+                <inTable> True </inTable>
+                <varName> Ay </varName>
+                <condition> defined </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> leftWall </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> argument </kind>
+                <inTable> True </inTable>
+                <varName> AleftWall </varName>
+                <condition> defined </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> rightWall </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> argument </kind>
+                <inTable> True </inTable>
+                <varName> ArightWall </varName>
+                <condition> defined </condition>
+              </identifier>
+            </term>
+            <symbol> - </symbol>
+            <term>
+              <integerConstant> 6 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> topWall </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> argument </kind>
+                <inTable> True </inTable>
+                <varName> AtopWall </varName>
+                <condition> defined </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> bottomWall </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> argument </kind>
+                <inTable> True </inTable>
+                <varName> AbottomWall </varName>
+                <condition> defined </condition>
+              </identifier>
+            </term>
+            <symbol> - </symbol>
+            <term>
+              <integerConstant> 6 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> wall </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 0 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> show </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <expression>
+            <term>
+              <keyword> this </keyword>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> dispose </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> class </kind>
+            <inTable> False </inTable>
+            <varName> Memory </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> . </symbol>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> deAlloc </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <keyword> this </keyword>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> show </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> class </kind>
+            <inTable> False </inTable>
+            <varName> Screen </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> . </symbol>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> setColor </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <keyword> true </keyword>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> draw </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> hide </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> class </kind>
+            <inTable> False </inTable>
+            <varName> Screen </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> . </symbol>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> setColor </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <keyword> false </keyword>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> draw </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> draw </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> class </kind>
+            <inTable> False </inTable>
+            <varName> Screen </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> . </symbol>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> drawRectangle </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier>
+                  <kind> field </kind>
+                  <inTable> True </inTable>
+                  <varName> x </varName>
+                  <condition> used </condition>
+                </identifier>
+              </term>
+            </expression>
+            <symbol> , </symbol>
+            <expression>
+              <term>
+                <identifier>
+                  <kind> field </kind>
+                  <inTable> True </inTable>
+                  <varName> y </varName>
+                  <condition> used </condition>
+                </identifier>
+              </term>
+            </expression>
+            <symbol> , </symbol>
+            <expression>
+              <term>
+                <identifier>
+                  <kind> field </kind>
+                  <inTable> True </inTable>
+                  <varName> x </varName>
+                  <condition> used </condition>
+                </identifier>
+              </term>
+              <symbol> + </symbol>
+              <term>
+                <integerConstant> 5 </integerConstant>
+              </term>
+            </expression>
+            <symbol> , </symbol>
+            <expression>
+              <term>
+                <identifier>
+                  <kind> field </kind>
+                  <inTable> True </inTable>
+                  <varName> y </varName>
+                  <condition> used </condition>
+                </identifier>
+              </term>
+              <symbol> + </symbol>
+              <term>
+                <integerConstant> 5 </integerConstant>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> int </keyword>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> getLeft </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <returnStatement>
+          <keyword> return </keyword>
+          <expression>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> x </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> int </keyword>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> getRight </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <returnStatement>
+          <keyword> return </keyword>
+          <expression>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> x </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+            <symbol> + </symbol>
+            <term>
+              <integerConstant> 5 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> setDestination </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+      <keyword> int </keyword>
+      <identifier>
+        <kind> argument </kind>
+        <inTable> True </inTable>
+        <varName> destx </varName>
+        <condition> defined </condition>
+      </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier>
+        <kind> argument </kind>
+        <inTable> True </inTable>
+        <varName> desty </varName>
+        <condition> defined </condition>
+      </identifier>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <varDec>
+        <keyword> var </keyword>
+        <keyword> int </keyword>
+        <identifier>
+          <kind> var </kind>
+          <inTable> True </inTable>
+          <varName> dx </varName>
+          <condition> defined </condition>
+        </identifier>
+        <symbol> , </symbol>
+        <identifier>
+          <kind> var </kind>
+          <inTable> True </inTable>
+          <varName> dy </varName>
+          <condition> defined </condition>
+        </identifier>
+        <symbol> , </symbol>
+        <identifier>
+          <kind> var </kind>
+          <inTable> True </inTable>
+          <varName> temp </varName>
+          <condition> defined </condition>
+        </identifier>
+        <symbol> ; </symbol>
+      </varDec>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> lengthx </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> argument </kind>
+                <inTable> True </inTable>
+                <varName> destx </varName>
+                <condition> defined </condition>
+              </identifier>
+            </term>
+            <symbol> - </symbol>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> x </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> lengthy </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> argument </kind>
+                <inTable> True </inTable>
+                <varName> desty </varName>
+                <condition> defined </condition>
+              </identifier>
+            </term>
+            <symbol> - </symbol>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> y </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> var </kind>
+            <inTable> True </inTable>
+            <varName> dx </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> class </kind>
+                <inTable> False </inTable>
+                <varName> Math </varName>
+                <condition> defined </condition>
+              </identifier>
+              <symbol> . </symbol>
+              <identifier>
+                <kind> subroutine </kind>
+                <inTable> False </inTable>
+                <varName> abs </varName>
+                <condition> defined </condition>
+              </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> lengthx </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> var </kind>
+            <inTable> True </inTable>
+            <varName> dy </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> class </kind>
+                <inTable> False </inTable>
+                <varName> Math </varName>
+                <condition> defined </condition>
+              </identifier>
+              <symbol> . </symbol>
+              <identifier>
+                <kind> subroutine </kind>
+                <inTable> False </inTable>
+                <varName> abs </varName>
+                <condition> defined </condition>
+              </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> lengthy </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> invert </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> dx </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+                <symbol> &lt; </symbol>
+                <term>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> dy </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> invert </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> var </kind>
+                <inTable> True </inTable>
+                <varName> temp </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> dx </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> var </kind>
+                <inTable> True </inTable>
+                <varName> dx </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> dy </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> var </kind>
+                <inTable> True </inTable>
+                <varName> dy </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> temp </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> positivex </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> y </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> &lt; </symbol>
+                    <term>
+                      <identifier>
+                        <kind> argument </kind>
+                        <inTable> True </inTable>
+                        <varName> desty </varName>
+                        <condition> defined </condition>
+                      </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> positivey </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> x </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> &lt; </symbol>
+                    <term>
+                      <identifier>
+                        <kind> argument </kind>
+                        <inTable> True </inTable>
+                        <varName> destx </varName>
+                        <condition> defined </condition>
+                      </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+          <keyword> else </keyword>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> positivex </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> x </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> &lt; </symbol>
+                    <term>
+                      <identifier>
+                        <kind> argument </kind>
+                        <inTable> True </inTable>
+                        <varName> destx </varName>
+                        <condition> defined </condition>
+                      </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> positivey </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> y </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> &lt; </symbol>
+                    <term>
+                      <identifier>
+                        <kind> argument </kind>
+                        <inTable> True </inTable>
+                        <varName> desty </varName>
+                        <condition> defined </condition>
+                      </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> d </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 2 </integerConstant>
+                </term>
+                <symbol> * </symbol>
+                <term>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> dy </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+            </term>
+            <symbol> - </symbol>
+            <term>
+              <identifier>
+                <kind> var </kind>
+                <inTable> True </inTable>
+                <varName> dx </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> straightD </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 2 </integerConstant>
+            </term>
+            <symbol> * </symbol>
+            <term>
+              <identifier>
+                <kind> var </kind>
+                <inTable> True </inTable>
+                <varName> dy </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> field </kind>
+            <inTable> True </inTable>
+            <varName> diagonalD </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 2 </integerConstant>
+            </term>
+            <symbol> * </symbol>
+            <term>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> dy </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+                <symbol> - </symbol>
+                <term>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> dx </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> int </keyword>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> move </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> hide </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> d </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+            <symbol> &lt; </symbol>
+            <term>
+              <integerConstant> 0 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> d </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> d </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+                <symbol> + </symbol>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> straightD </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+          <keyword> else </keyword>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> d </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> d </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+                <symbol> + </symbol>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> diagonalD </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> positivey </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <ifStatement>
+                  <keyword> if </keyword>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> invert </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                  <symbol> { </symbol>
+                  <statements>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> x </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> field </kind>
+                            <inTable> True </inTable>
+                            <varName> x </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                        <symbol> + </symbol>
+                        <term>
+                          <integerConstant> 4 </integerConstant>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                  </statements>
+                  <symbol> } </symbol>
+                  <keyword> else </keyword>
+                  <symbol> { </symbol>
+                  <statements>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> y </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> field </kind>
+                            <inTable> True </inTable>
+                            <varName> y </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                        <symbol> + </symbol>
+                        <term>
+                          <integerConstant> 4 </integerConstant>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                  </statements>
+                  <symbol> } </symbol>
+                </ifStatement>
+              </statements>
+              <symbol> } </symbol>
+              <keyword> else </keyword>
+              <symbol> { </symbol>
+              <statements>
+                <ifStatement>
+                  <keyword> if </keyword>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> invert </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                  <symbol> { </symbol>
+                  <statements>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> x </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> field </kind>
+                            <inTable> True </inTable>
+                            <varName> x </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                        <symbol> - </symbol>
+                        <term>
+                          <integerConstant> 4 </integerConstant>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                  </statements>
+                  <symbol> } </symbol>
+                  <keyword> else </keyword>
+                  <symbol> { </symbol>
+                  <statements>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> y </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> field </kind>
+                            <inTable> True </inTable>
+                            <varName> y </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                        <symbol> - </symbol>
+                        <term>
+                          <integerConstant> 4 </integerConstant>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                  </statements>
+                  <symbol> } </symbol>
+                </ifStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> positivex </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> invert </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> y </varName>
+                    <condition> used </condition>
+                  </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> y </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> + </symbol>
+                    <term>
+                      <integerConstant> 4 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+              <keyword> else </keyword>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> x </varName>
+                    <condition> used </condition>
+                  </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> x </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> + </symbol>
+                    <term>
+                      <integerConstant> 4 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+          </statements>
+          <symbol> } </symbol>
+          <keyword> else </keyword>
+          <symbol> { </symbol>
+          <statements>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> invert </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> y </varName>
+                    <condition> used </condition>
+                  </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> y </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> - </symbol>
+                    <term>
+                      <integerConstant> 4 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+              <keyword> else </keyword>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> x </varName>
+                    <condition> used </condition>
+                  </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> x </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> - </symbol>
+                    <term>
+                      <integerConstant> 4 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <symbol> ~ </symbol>
+              <term>
+                <symbol> ( </symbol>
+                <expression>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> x </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                  <symbol> &gt; </symbol>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> leftWall </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                </expression>
+                <symbol> ) </symbol>
+              </term>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> wall </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 1 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> x </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> leftWall </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <symbol> ~ </symbol>
+              <term>
+                <symbol> ( </symbol>
+                <expression>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> x </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                  <symbol> &lt; </symbol>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> rightWall </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                </expression>
+                <symbol> ) </symbol>
+              </term>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> wall </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 2 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> x </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> rightWall </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <symbol> ~ </symbol>
+              <term>
+                <symbol> ( </symbol>
+                <expression>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> y </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                  <symbol> &gt; </symbol>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> topWall </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                </expression>
+                <symbol> ) </symbol>
+              </term>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> wall </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 3 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> y </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> topWall </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <symbol> ~ </symbol>
+              <term>
+                <symbol> ( </symbol>
+                <expression>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> y </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                  <symbol> &lt; </symbol>
+                  <term>
+                    <identifier>
+                      <kind> field </kind>
+                      <inTable> True </inTable>
+                      <varName> bottomWall </varName>
+                      <condition> used </condition>
+                    </identifier>
+                  </term>
+                </expression>
+                <symbol> ) </symbol>
+              </term>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> wall </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 4 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> y </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> bottomWall </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> show </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <expression>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> wall </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier>
+      <kind> subroutine </kind>
+      <inTable> False </inTable>
+      <varName> bounce </varName>
+      <condition> defined </condition>
+    </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+      <keyword> int </keyword>
+      <identifier>
+        <kind> argument </kind>
+        <inTable> True </inTable>
+        <varName> bouncingDirection </varName>
+        <condition> defined </condition>
+      </identifier>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <varDec>
+        <keyword> var </keyword>
+        <keyword> int </keyword>
+        <identifier>
+          <kind> var </kind>
+          <inTable> True </inTable>
+          <varName> newx </varName>
+          <condition> defined </condition>
+        </identifier>
+        <symbol> , </symbol>
+        <identifier>
+          <kind> var </kind>
+          <inTable> True </inTable>
+          <varName> newy </varName>
+          <condition> defined </condition>
+        </identifier>
+        <symbol> , </symbol>
+        <identifier>
+          <kind> var </kind>
+          <inTable> True </inTable>
+          <varName> divLengthx </varName>
+          <condition> defined </condition>
+        </identifier>
+        <symbol> , </symbol>
+        <identifier>
+          <kind> var </kind>
+          <inTable> True </inTable>
+          <varName> divLengthy </varName>
+          <condition> defined </condition>
+        </identifier>
+        <symbol> , </symbol>
+        <identifier>
+          <kind> var </kind>
+          <inTable> True </inTable>
+          <varName> factor </varName>
+          <condition> defined </condition>
+        </identifier>
+        <symbol> ; </symbol>
+      </varDec>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> var </kind>
+            <inTable> True </inTable>
+            <varName> divLengthx </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> lengthx </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+            <symbol> / </symbol>
+            <term>
+              <integerConstant> 10 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier>
+            <kind> var </kind>
+            <inTable> True </inTable>
+            <varName> divLengthy </varName>
+            <condition> used </condition>
+          </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> lengthy </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+            <symbol> / </symbol>
+            <term>
+              <integerConstant> 10 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> argument </kind>
+                <inTable> True </inTable>
+                <varName> bouncingDirection </varName>
+                <condition> defined </condition>
+              </identifier>
+            </term>
+            <symbol> = </symbol>
+            <term>
+              <integerConstant> 0 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> var </kind>
+                <inTable> True </inTable>
+                <varName> factor </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 10 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+          <keyword> else </keyword>
+          <symbol> { </symbol>
+          <statements>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <symbol> ( </symbol>
+                      <expression>
+                        <term>
+                          <symbol> ~ </symbol>
+                          <term>
+                            <symbol> ( </symbol>
+                            <expression>
+                              <term>
+                                <identifier>
+                                  <kind> field </kind>
+                                  <inTable> True </inTable>
+                                  <varName> lengthx </varName>
+                                  <condition> used </condition>
+                                </identifier>
+                              </term>
+                              <symbol> &lt; </symbol>
+                              <term>
+                                <integerConstant> 0 </integerConstant>
+                              </term>
+                            </expression>
+                            <symbol> ) </symbol>
+                          </term>
+                        </term>
+                      </expression>
+                      <symbol> ) </symbol>
+                    </term>
+                    <symbol> &amp; </symbol>
+                    <term>
+                      <symbol> ( </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> argument </kind>
+                            <inTable> True </inTable>
+                            <varName> bouncingDirection </varName>
+                            <condition> defined </condition>
+                          </identifier>
+                        </term>
+                        <symbol> = </symbol>
+                        <term>
+                          <integerConstant> 1 </integerConstant>
+                        </term>
+                      </expression>
+                      <symbol> ) </symbol>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                </term>
+                <symbol> | </symbol>
+                <term>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <symbol> ( </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> field </kind>
+                            <inTable> True </inTable>
+                            <varName> lengthx </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                        <symbol> &lt; </symbol>
+                        <term>
+                          <integerConstant> 0 </integerConstant>
+                        </term>
+                      </expression>
+                      <symbol> ) </symbol>
+                    </term>
+                    <symbol> &amp; </symbol>
+                    <term>
+                      <symbol> ( </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> argument </kind>
+                            <inTable> True </inTable>
+                            <varName> bouncingDirection </varName>
+                            <condition> defined </condition>
+                          </identifier>
+                        </term>
+                        <symbol> = </symbol>
+                        <term>
+                          <symbol> ( </symbol>
+                          <expression>
+                            <term>
+                              <symbol> - </symbol>
+                              <term>
+                                <integerConstant> 1 </integerConstant>
+                              </term>
+                            </term>
+                          </expression>
+                          <symbol> ) </symbol>
+                        </term>
+                      </expression>
+                      <symbol> ) </symbol>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> factor </varName>
+                    <condition> used </condition>
+                  </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 20 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+              <keyword> else </keyword>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> factor </varName>
+                    <condition> used </condition>
+                  </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 5 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier>
+                <kind> field </kind>
+                <inTable> True </inTable>
+                <varName> wall </varName>
+                <condition> used </condition>
+              </identifier>
+            </term>
+            <symbol> = </symbol>
+            <term>
+              <integerConstant> 1 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> var </kind>
+                <inTable> True </inTable>
+                <varName> newx </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 506 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> var </kind>
+                <inTable> True </inTable>
+                <varName> newy </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> divLengthy </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> * </symbol>
+                    <term>
+                      <symbol> ( </symbol>
+                      <expression>
+                        <term>
+                          <symbol> - </symbol>
+                          <term>
+                            <integerConstant> 50 </integerConstant>
+                          </term>
+                        </term>
+                      </expression>
+                      <symbol> ) </symbol>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                </term>
+                <symbol> / </symbol>
+                <term>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> divLengthx </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier>
+                <kind> var </kind>
+                <inTable> True </inTable>
+                <varName> newy </varName>
+                <condition> used </condition>
+              </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> y </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+                <symbol> + </symbol>
+                <term>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> newy </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> * </symbol>
+                    <term>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> factor </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+          <keyword> else </keyword>
+          <symbol> { </symbol>
+          <statements>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier>
+                    <kind> field </kind>
+                    <inTable> True </inTable>
+                    <varName> wall </varName>
+                    <condition> used </condition>
+                  </identifier>
+                </term>
+                <symbol> = </symbol>
+                <term>
+                  <integerConstant> 2 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> newx </varName>
+                    <condition> used </condition>
+                  </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 0 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> newy </varName>
+                    <condition> used </condition>
+                  </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <symbol> ( </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> var </kind>
+                            <inTable> True </inTable>
+                            <varName> divLengthy </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                        <symbol> * </symbol>
+                        <term>
+                          <integerConstant> 50 </integerConstant>
+                        </term>
+                      </expression>
+                      <symbol> ) </symbol>
+                    </term>
+                    <symbol> / </symbol>
+                    <term>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> divLengthx </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier>
+                    <kind> var </kind>
+                    <inTable> True </inTable>
+                    <varName> newy </varName>
+                    <condition> used </condition>
+                  </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> y </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> + </symbol>
+                    <term>
+                      <symbol> ( </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> var </kind>
+                            <inTable> True </inTable>
+                            <varName> newy </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                        <symbol> * </symbol>
+                        <term>
+                          <identifier>
+                            <kind> var </kind>
+                            <inTable> True </inTable>
+                            <varName> factor </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                      </expression>
+                      <symbol> ) </symbol>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+              <keyword> else </keyword>
+              <symbol> { </symbol>
+              <statements>
+                <ifStatement>
+                  <keyword> if </keyword>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier>
+                        <kind> field </kind>
+                        <inTable> True </inTable>
+                        <varName> wall </varName>
+                        <condition> used </condition>
+                      </identifier>
+                    </term>
+                    <symbol> = </symbol>
+                    <term>
+                      <integerConstant> 3 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                  <symbol> { </symbol>
+                  <statements>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> newy </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <integerConstant> 250 </integerConstant>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> newx </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <symbol> ( </symbol>
+                          <expression>
+                            <term>
+                              <identifier>
+                                <kind> var </kind>
+                                <inTable> True </inTable>
+                                <varName> divLengthx </varName>
+                                <condition> used </condition>
+                              </identifier>
+                            </term>
+                            <symbol> * </symbol>
+                            <term>
+                              <symbol> ( </symbol>
+                              <expression>
+                                <term>
+                                  <symbol> - </symbol>
+                                  <term>
+                                    <integerConstant> 25 </integerConstant>
+                                  </term>
+                                </term>
+                              </expression>
+                              <symbol> ) </symbol>
+                            </term>
+                          </expression>
+                          <symbol> ) </symbol>
+                        </term>
+                        <symbol> / </symbol>
+                        <term>
+                          <identifier>
+                            <kind> var </kind>
+                            <inTable> True </inTable>
+                            <varName> divLengthy </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> newx </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> field </kind>
+                            <inTable> True </inTable>
+                            <varName> x </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                        <symbol> + </symbol>
+                        <term>
+                          <symbol> ( </symbol>
+                          <expression>
+                            <term>
+                              <identifier>
+                                <kind> var </kind>
+                                <inTable> True </inTable>
+                                <varName> newx </varName>
+                                <condition> used </condition>
+                              </identifier>
+                            </term>
+                            <symbol> * </symbol>
+                            <term>
+                              <identifier>
+                                <kind> var </kind>
+                                <inTable> True </inTable>
+                                <varName> factor </varName>
+                                <condition> used </condition>
+                              </identifier>
+                            </term>
+                          </expression>
+                          <symbol> ) </symbol>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                  </statements>
+                  <symbol> } </symbol>
+                  <keyword> else </keyword>
+                  <symbol> { </symbol>
+                  <statements>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> newy </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <integerConstant> 0 </integerConstant>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> newx </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <symbol> ( </symbol>
+                          <expression>
+                            <term>
+                              <identifier>
+                                <kind> var </kind>
+                                <inTable> True </inTable>
+                                <varName> divLengthx </varName>
+                                <condition> used </condition>
+                              </identifier>
+                            </term>
+                            <symbol> * </symbol>
+                            <term>
+                              <integerConstant> 25 </integerConstant>
+                            </term>
+                          </expression>
+                          <symbol> ) </symbol>
+                        </term>
+                        <symbol> / </symbol>
+                        <term>
+                          <identifier>
+                            <kind> var </kind>
+                            <inTable> True </inTable>
+                            <varName> divLengthy </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                    <letStatement>
+                      <keyword> let </keyword>
+                      <identifier>
+                        <kind> var </kind>
+                        <inTable> True </inTable>
+                        <varName> newx </varName>
+                        <condition> used </condition>
+                      </identifier>
+                      <symbol> = </symbol>
+                      <expression>
+                        <term>
+                          <identifier>
+                            <kind> field </kind>
+                            <inTable> True </inTable>
+                            <varName> x </varName>
+                            <condition> used </condition>
+                          </identifier>
+                        </term>
+                        <symbol> + </symbol>
+                        <term>
+                          <symbol> ( </symbol>
+                          <expression>
+                            <term>
+                              <identifier>
+                                <kind> var </kind>
+                                <inTable> True </inTable>
+                                <varName> newx </varName>
+                                <condition> used </condition>
+                              </identifier>
+                            </term>
+                            <symbol> * </symbol>
+                            <term>
+                              <identifier>
+                                <kind> var </kind>
+                                <inTable> True </inTable>
+                                <varName> factor </varName>
+                                <condition> used </condition>
+                              </identifier>
+                            </term>
+                          </expression>
+                          <symbol> ) </symbol>
+                        </term>
+                      </expression>
+                      <symbol> ; </symbol>
+                    </letStatement>
+                  </statements>
+                  <symbol> } </symbol>
+                </ifStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier>
+            <kind> subroutine </kind>
+            <inTable> False </inTable>
+            <varName> setDestination </varName>
+            <condition> defined </condition>
+          </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier>
+                  <kind> var </kind>
+                  <inTable> True </inTable>
+                  <varName> newx </varName>
+                  <condition> used </condition>
+                </identifier>
+              </term>
+            </expression>
+            <symbol> , </symbol>
+            <expression>
+              <term>
+                <identifier>
+                  <kind> var </kind>
+                  <inTable> True </inTable>
+                  <varName> newy </varName>
+                  <condition> used </condition>
+                </identifier>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <symbol> } </symbol>
+</class>

@@ -1,0 +1,181 @@
+function SquareGame.new 0
+push CONST 2
+call Memory.alloc 1
+pop POINTER 0
+push CONST 0
+push CONST 0
+push CONST 30
+pop THIS 0
+push CONST 0
+pop THIS 1
+push POINTER 0
+function SquareGame.dispose 0
+push ARG 0
+pop POINTER 0
+push THIS 0
+call Square.dispose 1
+pop TEMP 0
+push POINTER 0
+call Memory.deAlloc 1
+pop TEMP 1
+push CONST 0
+function SquareGame.moveSquare 0
+push ARG 0
+pop POINTER 0
+push THIS 1
+push CONST 1
+EQ
+NOT
+if-goto label0
+push THIS 0
+call Square.moveUp 1
+pop TEMP 2
+goto label1
+label label0
+label label1
+push THIS 1
+push CONST 2
+EQ
+NOT
+if-goto label2
+push THIS 0
+call Square.moveDown 1
+pop TEMP 3
+goto label3
+label label2
+label label3
+push THIS 1
+push CONST 3
+EQ
+NOT
+if-goto label4
+push THIS 0
+call Square.moveLeft 1
+pop TEMP 4
+goto label5
+label label4
+label label5
+push THIS 1
+push CONST 4
+EQ
+NOT
+if-goto label6
+push THIS 0
+call Square.moveRight 1
+pop TEMP 5
+goto label7
+label label6
+label label7
+push CONST 5
+call Sys.wait 1
+pop TEMP 6
+push CONST 0
+function SquareGame.run 2
+push ARG 0
+pop POINTER 0
+push CONST 0
+pop LOCAL 1
+push LOCAL 1
+NOT
+label label0
+NOT
+if-goto label1
+push LOCAL 0
+push CONST 0
+EQ
+label label1
+NOT
+if-goto label2
+pop LOCAL 0
+call SquareGame.moveSquare 0
+pop TEMP 7
+goto label1
+label label2
+push LOCAL 0
+push CONST 81
+EQ
+NOT
+if-goto label2
+push CONST 1
+NEG
+pop LOCAL 1
+goto label3
+label label2
+label label3
+push LOCAL 0
+push CONST 90
+EQ
+NOT
+if-goto label4
+push THIS 0
+call Square.decSize 1
+pop TEMP 0
+goto label5
+label label4
+label label5
+push LOCAL 0
+push CONST 88
+EQ
+NOT
+if-goto label6
+push THIS 0
+call Square.incSize 1
+pop TEMP 1
+goto label7
+label label6
+label label7
+push LOCAL 0
+push CONST 131
+EQ
+NOT
+if-goto label8
+push CONST 1
+pop THIS 1
+goto label9
+label label8
+label label9
+push LOCAL 0
+push CONST 133
+EQ
+NOT
+if-goto label10
+push CONST 2
+pop THIS 1
+goto label11
+label label10
+label label11
+push LOCAL 0
+push CONST 130
+EQ
+NOT
+if-goto label12
+push CONST 3
+pop THIS 1
+goto label13
+label label12
+label label13
+push LOCAL 0
+push CONST 132
+EQ
+NOT
+if-goto label14
+push CONST 4
+pop THIS 1
+goto label15
+label label14
+label label15
+push LOCAL 0
+push CONST 0
+EQ
+NOT
+label label16
+NOT
+if-goto label17
+pop LOCAL 0
+call SquareGame.moveSquare 0
+pop TEMP 2
+goto label16
+label label17
+goto label0
+label label1
+push CONST 0
