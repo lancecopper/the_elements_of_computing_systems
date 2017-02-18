@@ -1,0 +1,69 @@
+function Memory.init 3
+push constant 0
+pop local 2
+push constant 0
+pop local 1
+push constant 16384
+pop local 0
+label WHILE_EXP0
+push local 1
+push local 0
+lt
+not
+if-goto WHILE_END0
+push local 1
+push local 2
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 2048
+pop static 0
+push constant 0
+push local 2
+add
+push constant 256
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+return
+function Memory.peek 1
+push constant 0
+pop local 0
+push argument 0
+push local 0
+add
+pop pointer 1
+push that 0
+return
+function Memory.poke 1
+push constant 0
+pop local 0
+push argument 0
+push local 0
+add
+push argument 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+return
+function Memory.alloc 1
+push static 0
+pop local 0
+push static 0
+push argument 0
+add
+pop static 0
+push local 0
+return
+function Memory.deAlloc 0
+push constant 0
+return

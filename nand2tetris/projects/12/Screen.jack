@@ -10,22 +10,52 @@
  * the screen is indexed (0,0).
  */
 class Screen {
+    static boolean color;
 
     /** Initializes the Screen. */
     function void init() {
+        var int memory, bound, index;
+        let memory = 0;
+        let bound = 24576;
+        let index = 0;
+        while (index < bound) {
+            let memory[index] = 0;
+        }
+        return;
     }
 
     /** Erases the entire screen. */
     function void clearScreen() {
+        var int memory, bound, index;
+        let memory = 0;
+        let bound = 24576;
+        let index = 0;
+        while (index < bound) {
+            let memory[index] = 0;
+        }
+        return;
     }
 
     /** Sets the current color, to be used for all subsequent drawXXX commands.
      *  Black is represented by true, white by false. */
     function void setColor(boolean b) {
+        let color = b;
+        return;
     }
 
     /** Draws the (x,y) pixel, using the current color. */
     function void drawPixel(int x, int y) {
+        var int mem_position, offset, mem_val;
+        let offset = y - ((y / 16) * 16);
+        let mem_position = 16384 + (x * 32) + (y / 16);
+        let mem_val = Memory.peek(mem_position);
+        if (color) {
+            let mem_val = Math.twoToThe[offset] | mem_val;       
+        }
+        else {
+            let mem_val = (~Math.twoToThe[offset] & mem_val);
+        }
+        return;
     }
 
     /** Draws a line from pixel (x1,y1) to pixel (x2,y2), using the current color. */

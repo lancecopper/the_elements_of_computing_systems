@@ -1,0 +1,143 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/Math.jack
+
+/**
+ * A library of commonly used mathematical functions.
+ * Note: Jack compilers implement multiplication and division using OS method calls.
+ */
+class Math {
+    static Array twoToThe;
+    static int divideadjuv;
+
+    /** Initializes the library. */
+    function void init() {
+        var int i, val;
+        let i = 0;
+        let val = 1;
+        let twoToThe = Array.new(16);
+        while (i < 16) {
+            let twoToThe[i] = val;
+            let i = i + 1;
+            let val = val + val;
+        }
+        return;
+    }
+    
+    function boolean bit(int x, int j) {
+        var boolean result;
+        if ((twoToThe[j] & x) = 0) {
+            let result = false;
+        }
+        else {
+            let result = true;
+        }
+        return result;
+    }
+
+    /** Returns the absolute value of x. */
+    function int abs(int x) {
+        var int comparison, result;
+        if (x < 0) {
+            let result = -x;
+        }
+        else {
+            let result = x;
+        }
+        return result;
+    }
+
+    /** Returns the product of x and y. 
+     *  When a Jack compiler detects the multiplication operator '*' in the 
+     *  program's code, it handles it by invoking this method. In other words,
+     *  the Jack expressions x*y and multiply(x,y) return the same value.
+     */
+    function int multiply(int x, int y) {
+        var int bitj, j, result;
+        let j = 0;
+        let result = 0;
+        while (j < 16) {
+            let bitj = Math.bit(y, j);
+            if (~(bitj = 0)) {
+                let result = result + x;
+            }
+            let x = x + x;
+            let j = j + 1;
+        }
+        return result;
+    }
+
+    /** Returns the integer part of x/y.
+     *  When a Jack compiler detects the multiplication operator '/' in the 
+     *  program's code, it handles it by invoking this method. In other words,
+     *  the Jack expressions x/y and divide(x,y) return the same value.
+     */
+    function int recursivedivide(int x, int y) {
+        var int q;
+        let divideadjuv = 0;
+        if (y > x) {
+            return 0;
+        }
+        let q = Math.recursivedivide(x, y + y);
+        if ((x - divideadjuv) < y) {
+            let divideadjuv = divideadjuv;
+            return q + q;
+        }
+        else {
+            let divideadjuv = divideadjuv + y;
+            return (q + q) + 1;
+        }
+    }
+    function int divide(int x, int y) {
+        var boolean sign;
+        var int result;
+        let sign = (x > 0) & (y > 0) | ((x < 0) & (y < 0));
+        let x = Math.abs(x);
+        let y = Math.abs(y);
+        let result = Math.recursivedivide(x, y);
+        if (sign) {
+            return result;
+        }
+        else {
+            return -result;
+        }
+    }
+
+    /** Returns the integer part of the square root of x. */
+    function int sqrt(int x) {
+        var int y, n, j, temp1, temp2;
+            let j = 7;
+            let y = 0;
+            while (~(j < 0)) {
+                let temp1 = y + twoToThe[j];
+                let temp2 = temp1 * temp1;
+                if (~ ((temp2 < 0) | (temp2 > x))) {
+                    let y = temp1;
+                }
+                let j = j - 1;
+            }
+            return y;
+    }
+
+    /** Returns the greater number. */
+    function int max(int a, int b) {
+        if (a < b) {
+            return b;
+        }
+        else {
+            return a;
+        }
+
+    }
+
+    /** Returns the smaller number. */
+    function int min(int a, int b) {
+        if (a > b) {
+            return b;
+        }
+        else {
+            return a;
+        }
+    }
+}
